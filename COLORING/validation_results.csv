@@ -1,0 +1,8 @@
+instance,valid,colors_used,solution_file,note
+.DS_Store,False,MISSING,.DS_Store.out,Run solver.py first
+gc_1000_5,True,109,gc_1000_5.out,
+gc_100_5,True,16,gc_100_5.out,
+gc_250_9,True,77,gc_250_9.out,
+gc_500_1,True,15,gc_500_1.out,
+gc_50_3,True,6,gc_50_3.out,
+gc_70_7,True,17,gc_70_7.out,
