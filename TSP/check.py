@@ -5,6 +5,9 @@ import csv
 import math
 import os
 import sys
+
+# Large TSP tours (for example tsp_33810_1) do not fit into the default CSV field limit.
+csv.field_size_limit(sys.maxsize)
 from dataclasses import dataclass
 from typing import List
 
