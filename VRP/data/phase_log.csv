@@ -1,0 +1,703 @@
+file,phase,candidate,status,constructed_cost,after_local_cost,best_before,best_after,improvement,time_seconds,note
+vrp_101_10_1,savings,noise=0,IMPROVED_BEST,833.508573,821.998860,INF,821.998860,INF,0.001,local_gain=11.509713
+vrp_101_10_1,savings,PHASE_SUMMARY,USEFUL,INF,INF,INF,821.998860,INF,0.001,candidates=1; feasible=1; improved=1
+vrp_101_10_1,sweep-grid,try=0;dir=forward;offset=0.000,OK_NO_BEST,1259.643039,919.265325,821.998860,821.998860,0.000000,0.002,local_gain=340.377713
+vrp_101_10_1,sweep-grid,try=0;dir=reverse;offset=0.000,OK_NO_BEST,1074.555031,937.209183,821.998860,821.998860,0.000000,0.002,local_gain=137.345848
+vrp_101_10_1,sweep-grid,try=1;dir=forward;offset=0.157,OK_NO_BEST,1043.354044,923.078473,821.998860,821.998860,0.000000,0.003,local_gain=120.275571
+vrp_101_10_1,sweep-grid,try=1;dir=reverse;offset=0.157,OK_NO_BEST,1029.954986,902.101547,821.998860,821.998860,0.000000,0.004,local_gain=127.853439
+vrp_101_10_1,sweep-grid,try=2;dir=forward;offset=0.314,OK_NO_BEST,1105.606334,862.808811,821.998860,821.998860,0.000000,0.004,local_gain=242.797523
+vrp_101_10_1,sweep-grid,try=2;dir=reverse;offset=0.314,OK_NO_BEST,1071.123732,1034.995032,821.998860,821.998860,0.000000,0.005,local_gain=36.128699
+vrp_101_10_1,sweep-grid,try=3;dir=forward;offset=0.471,OK_NO_BEST,1088.365632,1052.689812,821.998860,821.998860,0.000000,0.005,local_gain=35.675820
+vrp_101_10_1,sweep-grid,try=3;dir=reverse;offset=0.471,OK_NO_BEST,1058.005464,966.057983,821.998860,821.998860,0.000000,0.006,local_gain=91.947481
+vrp_101_10_1,sweep-grid,try=4;dir=forward;offset=0.628,OK_NO_BEST,1088.365632,1052.689812,821.998860,821.998860,0.000000,0.006,local_gain=35.675820
+vrp_101_10_1,sweep-grid,try=4;dir=reverse;offset=0.628,OK_NO_BEST,1058.005464,966.057983,821.998860,821.998860,0.000000,0.006,local_gain=91.947481
+vrp_101_10_1,sweep-grid,try=5;dir=forward;offset=0.785,OK_NO_BEST,1088.365632,1052.689812,821.998860,821.998860,0.000000,0.007,local_gain=35.675820
+vrp_101_10_1,sweep-grid,try=5;dir=reverse;offset=0.785,OK_NO_BEST,1058.005464,966.057983,821.998860,821.998860,0.000000,0.007,local_gain=91.947481
+vrp_101_10_1,sweep-grid,try=6;dir=forward;offset=0.942,OK_NO_BEST,1056.645868,899.657259,821.998860,821.998860,0.000000,0.008,local_gain=156.988609
+vrp_101_10_1,sweep-grid,try=6;dir=reverse;offset=0.942,OK_NO_BEST,1045.464497,930.040909,821.998860,821.998860,0.000000,0.008,local_gain=115.423589
+vrp_101_10_1,sweep-grid,try=7;dir=forward;offset=1.100,OK_NO_BEST,1064.444123,981.175623,821.998860,821.998860,0.000000,0.009,local_gain=83.268500
+vrp_101_10_1,sweep-grid,try=7;dir=reverse;offset=1.100,OK_NO_BEST,1068.386094,952.016250,821.998860,821.998860,0.000000,0.010,local_gain=116.369844
+vrp_101_10_1,sweep-grid,try=8;dir=forward;offset=1.257,OK_NO_BEST,1126.550191,888.435209,821.998860,821.998860,0.000000,0.011,local_gain=238.114981
+vrp_101_10_1,sweep-grid,try=8;dir=reverse;offset=1.257,OK_NO_BEST,1039.338625,963.300086,821.998860,821.998860,0.000000,0.011,local_gain=76.038539
+vrp_101_10_1,sweep-grid,try=9;dir=forward;offset=1.414,OK_NO_BEST,1043.690894,907.073060,821.998860,821.998860,0.000000,0.012,local_gain=136.617834
+vrp_101_10_1,sweep-grid,try=9;dir=reverse;offset=1.414,OK_NO_BEST,1076.311140,964.727298,821.998860,821.998860,0.000000,0.013,local_gain=111.583842
+vrp_101_10_1,sweep-grid,try=10;dir=forward;offset=1.571,OK_NO_BEST,1153.281727,1045.672716,821.998860,821.998860,0.000000,0.013,local_gain=107.609011
+vrp_101_10_1,sweep-grid,try=10;dir=reverse;offset=1.571,OK_NO_BEST,980.988298,891.757367,821.998860,821.998860,0.000000,0.014,local_gain=89.230932
+vrp_101_10_1,sweep-grid,try=11;dir=forward;offset=1.728,OK_NO_BEST,1078.127652,1020.071167,821.998860,821.998860,0.000000,0.014,local_gain=58.056484
+vrp_101_10_1,sweep-grid,try=11;dir=reverse;offset=1.728,OK_NO_BEST,1088.759182,1021.829218,821.998860,821.998860,0.000000,0.014,local_gain=66.929963
+vrp_101_10_1,sweep-grid,try=12;dir=forward;offset=1.885,OK_NO_BEST,1107.292832,1014.637075,821.998860,821.998860,0.000000,0.014,local_gain=92.655756
+vrp_101_10_1,sweep-grid,try=12;dir=reverse;offset=1.885,OK_NO_BEST,1113.779690,991.143987,821.998860,821.998860,0.000000,0.015,local_gain=122.635703
+vrp_101_10_1,sweep-grid,try=13;dir=forward;offset=2.042,OK_NO_BEST,1118.445794,997.042222,821.998860,821.998860,0.000000,0.015,local_gain=121.403572
+vrp_101_10_1,sweep-grid,try=13;dir=reverse;offset=2.042,OK_NO_BEST,1062.281330,930.354546,821.998860,821.998860,0.000000,0.015,local_gain=131.926783
+vrp_101_10_1,sweep-grid,try=14;dir=forward;offset=2.199,OK_NO_BEST,1082.076408,1001.399027,821.998860,821.998860,0.000000,0.015,local_gain=80.677381
+vrp_101_10_1,sweep-grid,try=14;dir=reverse;offset=2.199,OK_NO_BEST,1174.313791,1000.637511,821.998860,821.998860,0.000000,0.016,local_gain=173.676280
+vrp_101_10_1,sweep-grid,try=15;dir=forward;offset=2.356,OK_NO_BEST,1104.359337,970.495418,821.998860,821.998860,0.000000,0.016,local_gain=133.863918
+vrp_101_10_1,sweep-grid,try=15;dir=reverse;offset=2.356,OK_NO_BEST,1149.538997,999.876723,821.998860,821.998860,0.000000,0.016,local_gain=149.662274
+vrp_101_10_1,sweep-grid,try=16;dir=forward;offset=2.513,OK_NO_BEST,1051.704349,978.625851,821.998860,821.998860,0.000000,0.016,local_gain=73.078498
+vrp_101_10_1,sweep-grid,try=16;dir=reverse;offset=2.513,OK_NO_BEST,1036.001391,1000.626747,821.998860,821.998860,0.000000,0.017,local_gain=35.374644
+vrp_101_10_1,sweep-grid,try=17;dir=forward;offset=2.670,OK_NO_BEST,1051.704349,978.625851,821.998860,821.998860,0.000000,0.017,local_gain=73.078498
+vrp_101_10_1,sweep-grid,try=17;dir=reverse;offset=2.670,OK_NO_BEST,1036.001391,1000.626747,821.998860,821.998860,0.000000,0.017,local_gain=35.374644
+vrp_101_10_1,sweep-grid,try=18;dir=forward;offset=2.827,OK_NO_BEST,1038.893035,935.678546,821.998860,821.998860,0.000000,0.017,local_gain=103.214489
+vrp_101_10_1,sweep-grid,try=18;dir=reverse;offset=2.827,OK_NO_BEST,1021.859007,960.706462,821.998860,821.998860,0.000000,0.017,local_gain=61.152545
+vrp_101_10_1,sweep-grid,try=19;dir=forward;offset=2.985,OK_NO_BEST,1024.083098,855.957884,821.998860,821.998860,0.000000,0.018,local_gain=168.125214
+vrp_101_10_1,sweep-grid,try=19;dir=reverse;offset=2.985,OK_NO_BEST,1031.568098,958.020628,821.998860,821.998860,0.000000,0.018,local_gain=73.547470
+vrp_101_10_1,sweep-grid,try=20;dir=forward;offset=3.142,OK_NO_BEST,1004.259441,971.805180,821.998860,821.998860,0.000000,0.018,local_gain=32.454261
+vrp_101_10_1,sweep-grid,try=20;dir=reverse;offset=3.142,OK_NO_BEST,1183.198007,1011.450760,821.998860,821.998860,0.000000,0.019,local_gain=171.747247
+vrp_101_10_1,sweep-grid,try=21;dir=forward;offset=3.299,OK_NO_BEST,1072.326928,935.678546,821.998860,821.998860,0.000000,0.019,local_gain=136.648382
+vrp_101_10_1,sweep-grid,try=21;dir=reverse;offset=3.299,OK_NO_BEST,1062.033657,926.338855,821.998860,821.998860,0.000000,0.020,local_gain=135.694803
+vrp_101_10_1,sweep-grid,try=22;dir=forward;offset=3.456,OK_NO_BEST,1081.830963,1002.945506,821.998860,821.998860,0.000000,0.020,local_gain=78.885458
+vrp_101_10_1,sweep-grid,try=22;dir=reverse;offset=3.456,OK_NO_BEST,1003.843033,909.583086,821.998860,821.998860,0.000000,0.021,local_gain=94.259948
+vrp_101_10_1,sweep-grid,try=23;dir=forward;offset=3.613,OK_NO_BEST,1058.644742,978.337451,821.998860,821.998860,0.000000,0.021,local_gain=80.307291
+vrp_101_10_1,sweep-grid,try=23;dir=reverse;offset=3.613,OK_NO_BEST,1075.271100,965.680720,821.998860,821.998860,0.000000,0.021,local_gain=109.590380
+vrp_101_10_1,sweep-grid,try=24;dir=forward;offset=3.770,OK_NO_BEST,1058.644742,978.337451,821.998860,821.998860,0.000000,0.022,local_gain=80.307291
+vrp_101_10_1,sweep-grid,try=24;dir=reverse;offset=3.770,OK_NO_BEST,1075.271100,965.680720,821.998860,821.998860,0.000000,0.022,local_gain=109.590380
+vrp_101_10_1,sweep-grid,try=25;dir=forward;offset=3.927,OK_NO_BEST,1058.644742,978.337451,821.998860,821.998860,0.000000,0.022,local_gain=80.307291
+vrp_101_10_1,sweep-grid,try=25;dir=reverse;offset=3.927,OK_NO_BEST,1075.271100,965.680720,821.998860,821.998860,0.000000,0.023,local_gain=109.590380
+vrp_101_10_1,sweep-grid,try=26;dir=forward;offset=4.084,OK_NO_BEST,1092.161374,996.999494,821.998860,821.998860,0.000000,0.023,local_gain=95.161880
+vrp_101_10_1,sweep-grid,try=26;dir=reverse;offset=4.084,OK_NO_BEST,1101.543449,958.129817,821.998860,821.998860,0.000000,0.024,local_gain=143.413633
+vrp_101_10_1,sweep-grid,try=27;dir=forward;offset=4.241,OK_NO_BEST,1137.093261,1041.194128,821.998860,821.998860,0.000000,0.024,local_gain=95.899133
+vrp_101_10_1,sweep-grid,try=27;dir=reverse;offset=4.241,OK_NO_BEST,1020.099924,968.899225,821.998860,821.998860,0.000000,0.025,local_gain=51.200699
+vrp_101_10_1,sweep-grid,try=28;dir=forward;offset=4.398,OK_NO_BEST,1074.953033,981.330041,821.998860,821.998860,0.000000,0.025,local_gain=93.622992
+vrp_101_10_1,sweep-grid,try=28;dir=reverse;offset=4.398,OK_NO_BEST,979.266052,925.099179,821.998860,821.998860,0.000000,0.025,local_gain=54.166873
+vrp_101_10_1,sweep-grid,try=29;dir=forward;offset=4.555,OK_NO_BEST,992.813161,912.235337,821.998860,821.998860,0.000000,0.026,local_gain=80.577824
+vrp_101_10_1,sweep-grid,try=29;dir=reverse;offset=4.555,OK_NO_BEST,1142.616480,932.906166,821.998860,821.998860,0.000000,0.026,local_gain=209.710313
+vrp_101_10_1,sweep-grid,try=30;dir=forward;offset=4.712,OK_NO_BEST,1113.848797,985.044673,821.998860,821.998860,0.000000,0.027,local_gain=128.804124
+vrp_101_10_1,sweep-grid,try=30;dir=reverse;offset=4.712,OK_NO_BEST,1103.534780,933.581818,821.998860,821.998860,0.000000,0.028,local_gain=169.952962
+vrp_101_10_1,sweep-grid,try=31;dir=forward;offset=4.869,OK_NO_BEST,1039.315052,912.235337,821.998860,821.998860,0.000000,0.028,local_gain=127.079715
+vrp_101_10_1,sweep-grid,try=31;dir=reverse;offset=4.869,OK_NO_BEST,1095.307075,932.906166,821.998860,821.998860,0.000000,0.029,local_gain=162.400908
+vrp_101_10_1,sweep-grid,try=32;dir=forward;offset=5.027,OK_NO_BEST,1061.623303,980.887492,821.998860,821.998860,0.000000,0.029,local_gain=80.735812
+vrp_101_10_1,sweep-grid,try=32;dir=reverse;offset=5.027,OK_NO_BEST,1209.264567,1011.411616,821.998860,821.998860,0.000000,0.030,local_gain=197.852951
+vrp_101_10_1,sweep-grid,try=33;dir=forward;offset=5.184,OK_NO_BEST,1076.685872,894.670419,821.998860,821.998860,0.000000,0.031,local_gain=182.015452
+vrp_101_10_1,sweep-grid,try=33;dir=reverse;offset=5.184,OK_NO_BEST,1077.429495,983.133129,821.998860,821.998860,0.000000,0.031,local_gain=94.296365
+vrp_101_10_1,sweep-grid,try=34;dir=forward;offset=5.341,OK_NO_BEST,1087.636226,919.721751,821.998860,821.998860,0.000000,0.032,local_gain=167.914476
+vrp_101_10_1,sweep-grid,try=34;dir=reverse;offset=5.341,OK_NO_BEST,1034.926414,925.930432,821.998860,821.998860,0.000000,0.032,local_gain=108.995982
+vrp_101_10_1,sweep-grid,try=35;dir=forward;offset=5.498,OK_NO_BEST,1027.776146,917.873888,821.998860,821.998860,0.000000,0.033,local_gain=109.902258
+vrp_101_10_1,sweep-grid,try=35;dir=reverse;offset=5.498,OK_NO_BEST,1049.144642,937.898879,821.998860,821.998860,0.000000,0.033,local_gain=111.245763
+vrp_101_10_1,sweep-grid,try=36;dir=forward;offset=5.655,OK_NO_BEST,1022.130000,949.841686,821.998860,821.998860,0.000000,0.034,local_gain=72.288313
+vrp_101_10_1,sweep-grid,try=36;dir=reverse;offset=5.655,OK_NO_BEST,1094.898872,883.615670,821.998860,821.998860,0.000000,0.034,local_gain=211.283202
+vrp_101_10_1,sweep-grid,try=37;dir=forward;offset=5.812,OK_NO_BEST,1067.647474,980.887492,821.998860,821.998860,0.000000,0.035,local_gain=86.759982
+vrp_101_10_1,sweep-grid,try=37;dir=reverse;offset=5.812,OK_NO_BEST,1242.001260,924.951891,821.998860,821.998860,0.000000,0.036,local_gain=317.049369
+vrp_101_10_1,sweep-grid,try=38;dir=forward;offset=5.969,OK_NO_BEST,1118.216185,962.369199,821.998860,821.998860,0.000000,0.036,local_gain=155.846985
+vrp_101_10_1,sweep-grid,try=38;dir=reverse;offset=5.969,OK_NO_BEST,1141.109084,930.942845,821.998860,821.998860,0.000000,0.036,local_gain=210.166239
+vrp_101_10_1,sweep-grid,try=39;dir=forward;offset=6.126,OK_NO_BEST,1259.643039,919.265325,821.998860,821.998860,0.000000,0.037,local_gain=340.377713
+vrp_101_10_1,sweep-grid,try=39;dir=reverse;offset=6.126,OK_NO_BEST,1074.555031,937.209183,821.998860,821.998860,0.000000,0.037,local_gain=137.345848
+vrp_101_10_1,sweep-grid,PHASE_SUMMARY,NOT_USEFUL,INF,INF,821.998860,821.998860,0.000000,0.036,candidates=80; feasible=80; improved=0
+vrp_101_10_1,LNS,iter=4;removed=8,IMPROVED_BEST,821.328814,821.328814,821.998860,821.328814,0.670046,0.038,LNS destroy-repair improved incumbent
+vrp_101_10_1,LNS,iter=37;removed=6,IMPROVED_BEST,820.960831,820.960831,821.328814,820.960831,0.367983,0.040,LNS destroy-repair improved incumbent
+vrp_101_10_1,LNS,iter=43;removed=5,IMPROVED_BEST,820.921301,820.921301,820.960831,820.921301,0.039530,0.041,LNS destroy-repair improved incumbent
+vrp_101_10_1,LNS,PHASE_SUMMARY,USEFUL,INF,INF,821.998860,820.921301,1.077559,7.561,candidates=200001; feasible=200001; improved=3
+vrp_16_3_1,savings,noise=0,IMPROVED_BEST,290.418717,290.170812,INF,290.170812,INF,0.000,local_gain=0.247905
+vrp_16_3_1,savings,PHASE_SUMMARY,USEFUL,INF,INF,INF,290.170812,INF,0.000,candidates=1; feasible=1; improved=1
+vrp_16_3_1,sweep-grid,try=0;dir=forward;offset=0.000,INFEASIBLE,INF,INF,290.170812,290.170812,0.000000,0.000,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=0;dir=reverse;offset=0.000,INFEASIBLE,INF,INF,290.170812,290.170812,0.000000,0.000,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=1;dir=forward;offset=0.157,INFEASIBLE,INF,INF,290.170812,290.170812,0.000000,0.000,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=1;dir=reverse;offset=0.157,INFEASIBLE,INF,INF,290.170812,290.170812,0.000000,0.000,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=2;dir=forward;offset=0.314,INFEASIBLE,INF,INF,290.170812,290.170812,0.000000,0.000,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=2;dir=reverse;offset=0.314,INFEASIBLE,INF,INF,290.170812,290.170812,0.000000,0.000,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=3;dir=forward;offset=0.471,OK_NO_BEST,294.454788,294.454788,290.170812,290.170812,0.000000,0.000,local_gain=0.000000
+vrp_16_3_1,sweep-grid,try=3;dir=reverse;offset=0.471,OK_NO_BEST,323.559179,290.490236,290.170812,290.170812,0.000000,0.000,local_gain=33.068943
+vrp_16_3_1,sweep-grid,try=4;dir=forward;offset=0.628,OK_NO_BEST,294.454788,294.454788,290.170812,290.170812,0.000000,0.000,local_gain=0.000000
+vrp_16_3_1,sweep-grid,try=4;dir=reverse;offset=0.628,OK_NO_BEST,323.559179,290.490236,290.170812,290.170812,0.000000,0.000,local_gain=33.068943
+vrp_16_3_1,sweep-grid,try=5;dir=forward;offset=0.785,OK_NO_BEST,294.454788,294.454788,290.170812,290.170812,0.000000,0.000,local_gain=0.000000
+vrp_16_3_1,sweep-grid,try=5;dir=reverse;offset=0.785,OK_NO_BEST,323.559179,290.490236,290.170812,290.170812,0.000000,0.000,local_gain=33.068943
+vrp_16_3_1,sweep-grid,try=6;dir=forward;offset=0.942,IMPROVED_BEST,286.676810,285.527074,290.170812,285.527074,4.643738,0.000,local_gain=1.149736
+vrp_16_3_1,sweep-grid,try=6;dir=reverse;offset=0.942,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.000,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=7;dir=forward;offset=1.100,OK_NO_BEST,286.676810,285.527074,285.527074,285.527074,0.000000,0.000,local_gain=1.149736
+vrp_16_3_1,sweep-grid,try=7;dir=reverse;offset=1.100,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.000,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=8;dir=forward;offset=1.257,OK_NO_BEST,286.676810,285.527074,285.527074,285.527074,0.000000,0.000,local_gain=1.149736
+vrp_16_3_1,sweep-grid,try=8;dir=reverse;offset=1.257,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.000,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=9;dir=forward;offset=1.414,OK_NO_BEST,286.676810,285.527074,285.527074,285.527074,0.000000,0.000,local_gain=1.149736
+vrp_16_3_1,sweep-grid,try=9;dir=reverse;offset=1.414,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.000,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=10;dir=forward;offset=1.571,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.000,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=10;dir=reverse;offset=1.571,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.000,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=11;dir=forward;offset=1.728,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.000,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=11;dir=reverse;offset=1.728,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=12;dir=forward;offset=1.885,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=12;dir=reverse;offset=1.885,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=13;dir=forward;offset=2.042,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=13;dir=reverse;offset=2.042,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=14;dir=forward;offset=2.199,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=14;dir=reverse;offset=2.199,OK_NO_BEST,307.263457,295.051892,285.527074,285.527074,0.000000,0.001,local_gain=12.211565
+vrp_16_3_1,sweep-grid,try=15;dir=forward;offset=2.356,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=15;dir=reverse;offset=2.356,OK_NO_BEST,307.263457,295.051892,285.527074,285.527074,0.000000,0.001,local_gain=12.211565
+vrp_16_3_1,sweep-grid,try=16;dir=forward;offset=2.513,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=16;dir=reverse;offset=2.513,OK_NO_BEST,294.454788,294.454788,285.527074,285.527074,0.000000,0.001,local_gain=0.000000
+vrp_16_3_1,sweep-grid,try=17;dir=forward;offset=2.670,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=17;dir=reverse;offset=2.670,OK_NO_BEST,294.454788,294.454788,285.527074,285.527074,0.000000,0.001,local_gain=0.000000
+vrp_16_3_1,sweep-grid,try=18;dir=forward;offset=2.827,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=18;dir=reverse;offset=2.827,OK_NO_BEST,294.454788,294.454788,285.527074,285.527074,0.000000,0.001,local_gain=0.000000
+vrp_16_3_1,sweep-grid,try=19;dir=forward;offset=2.985,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=19;dir=reverse;offset=2.985,OK_NO_BEST,294.454788,294.454788,285.527074,285.527074,0.000000,0.001,local_gain=0.000000
+vrp_16_3_1,sweep-grid,try=20;dir=forward;offset=3.142,OK_NO_BEST,286.676810,285.527074,285.527074,285.527074,0.000000,0.001,local_gain=1.149736
+vrp_16_3_1,sweep-grid,try=20;dir=reverse;offset=3.142,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=21;dir=forward;offset=3.299,OK_NO_BEST,286.676810,285.527074,285.527074,285.527074,0.000000,0.001,local_gain=1.149736
+vrp_16_3_1,sweep-grid,try=21;dir=reverse;offset=3.299,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=22;dir=forward;offset=3.456,OK_NO_BEST,286.676810,285.527074,285.527074,285.527074,0.000000,0.001,local_gain=1.149736
+vrp_16_3_1,sweep-grid,try=22;dir=reverse;offset=3.456,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=23;dir=forward;offset=3.613,OK_NO_BEST,286.676810,285.527074,285.527074,285.527074,0.000000,0.001,local_gain=1.149736
+vrp_16_3_1,sweep-grid,try=23;dir=reverse;offset=3.613,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=24;dir=forward;offset=3.770,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=24;dir=reverse;offset=3.770,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=25;dir=forward;offset=3.927,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=25;dir=reverse;offset=3.927,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=26;dir=forward;offset=4.084,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=26;dir=reverse;offset=4.084,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=27;dir=forward;offset=4.241,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=27;dir=reverse;offset=4.241,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=28;dir=forward;offset=4.398,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=28;dir=reverse;offset=4.398,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=29;dir=forward;offset=4.555,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=29;dir=reverse;offset=4.555,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=30;dir=forward;offset=4.712,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=30;dir=reverse;offset=4.712,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=31;dir=forward;offset=4.869,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=31;dir=reverse;offset=4.869,OK_NO_BEST,294.454788,294.454788,285.527074,285.527074,0.000000,0.001,local_gain=0.000000
+vrp_16_3_1,sweep-grid,try=32;dir=forward;offset=5.027,OK_NO_BEST,294.454788,294.454788,285.527074,285.527074,0.000000,0.001,local_gain=0.000000
+vrp_16_3_1,sweep-grid,try=32;dir=reverse;offset=5.027,OK_NO_BEST,323.559179,290.490236,285.527074,285.527074,0.000000,0.001,local_gain=33.068943
+vrp_16_3_1,sweep-grid,try=33;dir=forward;offset=5.184,OK_NO_BEST,294.454788,294.454788,285.527074,285.527074,0.000000,0.001,local_gain=0.000000
+vrp_16_3_1,sweep-grid,try=33;dir=reverse;offset=5.184,OK_NO_BEST,323.559179,290.490236,285.527074,285.527074,0.000000,0.001,local_gain=33.068943
+vrp_16_3_1,sweep-grid,try=34;dir=forward;offset=5.341,OK_NO_BEST,294.454788,294.454788,285.527074,285.527074,0.000000,0.001,local_gain=0.000000
+vrp_16_3_1,sweep-grid,try=34;dir=reverse;offset=5.341,OK_NO_BEST,323.559179,290.490236,285.527074,285.527074,0.000000,0.001,local_gain=33.068943
+vrp_16_3_1,sweep-grid,try=35;dir=forward;offset=5.498,OK_NO_BEST,294.454788,294.454788,285.527074,285.527074,0.000000,0.001,local_gain=0.000000
+vrp_16_3_1,sweep-grid,try=35;dir=reverse;offset=5.498,OK_NO_BEST,323.559179,290.490236,285.527074,285.527074,0.000000,0.001,local_gain=33.068943
+vrp_16_3_1,sweep-grid,try=36;dir=forward;offset=5.655,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=36;dir=reverse;offset=5.655,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=37;dir=forward;offset=5.812,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=37;dir=reverse;offset=5.812,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=38;dir=forward;offset=5.969,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=38;dir=reverse;offset=5.969,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=39;dir=forward;offset=6.126,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,try=39;dir=reverse;offset=6.126,INFEASIBLE,INF,INF,285.527074,285.527074,0.000000,0.001,construction did not produce feasible solution
+vrp_16_3_1,sweep-grid,PHASE_SUMMARY,USEFUL,INF,INF,290.170812,285.527074,4.643738,0.001,candidates=80; feasible=29; improved=1
+vrp_16_3_1,LNS,iter=5;removed=8,IMPROVED_BEST,282.729359,282.729359,285.527074,282.729359,2.797714,0.001,LNS destroy-repair improved incumbent
+vrp_16_3_1,LNS,iter=9;removed=12,IMPROVED_BEST,278.726300,278.726300,282.729359,278.726300,4.003060,0.002,LNS destroy-repair improved incumbent
+vrp_16_3_1,LNS,PROGRESS,USEFUL_SO_FAR,INF,INF,285.527074,278.726300,6.800774,15.001,iter=3230380; feasible=3230380; improved=2
+vrp_16_3_1,LNS,PHASE_SUMMARY,USEFUL,INF,INF,285.527074,278.726300,6.800774,22.985,candidates=5000001; feasible=5000001; improved=2
+vrp_200_16_1,savings,noise=0,INFEASIBLE,INF,INF,INF,INF,0.000000,0.001,construction did not produce feasible solution
+vrp_200_16_1,savings,PHASE_SUMMARY,NOT_USEFUL,INF,INF,INF,INF,0.000000,0.001,candidates=1; feasible=0; improved=0
+vrp_200_16_1,sweep-grid,try=0;dir=forward;offset=0.000,INFEASIBLE,INF,INF,INF,INF,0.000000,0.001,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=0;dir=reverse;offset=0.000,INFEASIBLE,INF,INF,INF,INF,0.000000,0.001,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=1;dir=forward;offset=0.157,INFEASIBLE,INF,INF,INF,INF,0.000000,0.001,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=1;dir=reverse;offset=0.157,INFEASIBLE,INF,INF,INF,INF,0.000000,0.002,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=2;dir=forward;offset=0.314,INFEASIBLE,INF,INF,INF,INF,0.000000,0.002,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=2;dir=reverse;offset=0.314,INFEASIBLE,INF,INF,INF,INF,0.000000,0.002,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=3;dir=forward;offset=0.471,INFEASIBLE,INF,INF,INF,INF,0.000000,0.002,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=3;dir=reverse;offset=0.471,INFEASIBLE,INF,INF,INF,INF,0.000000,0.002,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=4;dir=forward;offset=0.628,INFEASIBLE,INF,INF,INF,INF,0.000000,0.002,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=4;dir=reverse;offset=0.628,INFEASIBLE,INF,INF,INF,INF,0.000000,0.002,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=5;dir=forward;offset=0.785,INFEASIBLE,INF,INF,INF,INF,0.000000,0.002,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=5;dir=reverse;offset=0.785,INFEASIBLE,INF,INF,INF,INF,0.000000,0.002,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=6;dir=forward;offset=0.942,INFEASIBLE,INF,INF,INF,INF,0.000000,0.002,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=6;dir=reverse;offset=0.942,INFEASIBLE,INF,INF,INF,INF,0.000000,0.002,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=7;dir=forward;offset=1.100,INFEASIBLE,INF,INF,INF,INF,0.000000,0.002,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=7;dir=reverse;offset=1.100,INFEASIBLE,INF,INF,INF,INF,0.000000,0.002,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=8;dir=forward;offset=1.257,INFEASIBLE,INF,INF,INF,INF,0.000000,0.002,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=8;dir=reverse;offset=1.257,INFEASIBLE,INF,INF,INF,INF,0.000000,0.002,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=9;dir=forward;offset=1.414,INFEASIBLE,INF,INF,INF,INF,0.000000,0.002,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=9;dir=reverse;offset=1.414,INFEASIBLE,INF,INF,INF,INF,0.000000,0.002,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=10;dir=forward;offset=1.571,INFEASIBLE,INF,INF,INF,INF,0.000000,0.002,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=10;dir=reverse;offset=1.571,INFEASIBLE,INF,INF,INF,INF,0.000000,0.002,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=11;dir=forward;offset=1.728,INFEASIBLE,INF,INF,INF,INF,0.000000,0.002,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=11;dir=reverse;offset=1.728,INFEASIBLE,INF,INF,INF,INF,0.000000,0.002,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=12;dir=forward;offset=1.885,INFEASIBLE,INF,INF,INF,INF,0.000000,0.002,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=12;dir=reverse;offset=1.885,INFEASIBLE,INF,INF,INF,INF,0.000000,0.002,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=13;dir=forward;offset=2.042,INFEASIBLE,INF,INF,INF,INF,0.000000,0.002,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=13;dir=reverse;offset=2.042,INFEASIBLE,INF,INF,INF,INF,0.000000,0.002,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=14;dir=forward;offset=2.199,INFEASIBLE,INF,INF,INF,INF,0.000000,0.002,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=14;dir=reverse;offset=2.199,INFEASIBLE,INF,INF,INF,INF,0.000000,0.002,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=15;dir=forward;offset=2.356,INFEASIBLE,INF,INF,INF,INF,0.000000,0.003,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=15;dir=reverse;offset=2.356,INFEASIBLE,INF,INF,INF,INF,0.000000,0.003,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=16;dir=forward;offset=2.513,INFEASIBLE,INF,INF,INF,INF,0.000000,0.003,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=16;dir=reverse;offset=2.513,INFEASIBLE,INF,INF,INF,INF,0.000000,0.003,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=17;dir=forward;offset=2.670,INFEASIBLE,INF,INF,INF,INF,0.000000,0.003,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=17;dir=reverse;offset=2.670,INFEASIBLE,INF,INF,INF,INF,0.000000,0.003,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=18;dir=forward;offset=2.827,INFEASIBLE,INF,INF,INF,INF,0.000000,0.003,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=18;dir=reverse;offset=2.827,INFEASIBLE,INF,INF,INF,INF,0.000000,0.003,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=19;dir=forward;offset=2.985,INFEASIBLE,INF,INF,INF,INF,0.000000,0.003,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=19;dir=reverse;offset=2.985,INFEASIBLE,INF,INF,INF,INF,0.000000,0.003,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=20;dir=forward;offset=3.142,INFEASIBLE,INF,INF,INF,INF,0.000000,0.003,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=20;dir=reverse;offset=3.142,INFEASIBLE,INF,INF,INF,INF,0.000000,0.003,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=21;dir=forward;offset=3.299,INFEASIBLE,INF,INF,INF,INF,0.000000,0.003,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=21;dir=reverse;offset=3.299,INFEASIBLE,INF,INF,INF,INF,0.000000,0.003,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=22;dir=forward;offset=3.456,INFEASIBLE,INF,INF,INF,INF,0.000000,0.003,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=22;dir=reverse;offset=3.456,INFEASIBLE,INF,INF,INF,INF,0.000000,0.003,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=23;dir=forward;offset=3.613,INFEASIBLE,INF,INF,INF,INF,0.000000,0.003,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=23;dir=reverse;offset=3.613,INFEASIBLE,INF,INF,INF,INF,0.000000,0.003,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=24;dir=forward;offset=3.770,INFEASIBLE,INF,INF,INF,INF,0.000000,0.003,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=24;dir=reverse;offset=3.770,INFEASIBLE,INF,INF,INF,INF,0.000000,0.003,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=25;dir=forward;offset=3.927,INFEASIBLE,INF,INF,INF,INF,0.000000,0.003,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=25;dir=reverse;offset=3.927,INFEASIBLE,INF,INF,INF,INF,0.000000,0.003,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=26;dir=forward;offset=4.084,INFEASIBLE,INF,INF,INF,INF,0.000000,0.003,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=26;dir=reverse;offset=4.084,INFEASIBLE,INF,INF,INF,INF,0.000000,0.003,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=27;dir=forward;offset=4.241,INFEASIBLE,INF,INF,INF,INF,0.000000,0.003,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=27;dir=reverse;offset=4.241,INFEASIBLE,INF,INF,INF,INF,0.000000,0.003,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=28;dir=forward;offset=4.398,INFEASIBLE,INF,INF,INF,INF,0.000000,0.003,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=28;dir=reverse;offset=4.398,INFEASIBLE,INF,INF,INF,INF,0.000000,0.004,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=29;dir=forward;offset=4.555,INFEASIBLE,INF,INF,INF,INF,0.000000,0.004,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=29;dir=reverse;offset=4.555,INFEASIBLE,INF,INF,INF,INF,0.000000,0.004,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=30;dir=forward;offset=4.712,INFEASIBLE,INF,INF,INF,INF,0.000000,0.004,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=30;dir=reverse;offset=4.712,INFEASIBLE,INF,INF,INF,INF,0.000000,0.004,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=31;dir=forward;offset=4.869,INFEASIBLE,INF,INF,INF,INF,0.000000,0.004,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=31;dir=reverse;offset=4.869,INFEASIBLE,INF,INF,INF,INF,0.000000,0.004,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=32;dir=forward;offset=5.027,INFEASIBLE,INF,INF,INF,INF,0.000000,0.004,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=32;dir=reverse;offset=5.027,INFEASIBLE,INF,INF,INF,INF,0.000000,0.004,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=33;dir=forward;offset=5.184,INFEASIBLE,INF,INF,INF,INF,0.000000,0.004,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=33;dir=reverse;offset=5.184,INFEASIBLE,INF,INF,INF,INF,0.000000,0.004,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=34;dir=forward;offset=5.341,INFEASIBLE,INF,INF,INF,INF,0.000000,0.004,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=34;dir=reverse;offset=5.341,INFEASIBLE,INF,INF,INF,INF,0.000000,0.004,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=35;dir=forward;offset=5.498,INFEASIBLE,INF,INF,INF,INF,0.000000,0.004,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=35;dir=reverse;offset=5.498,INFEASIBLE,INF,INF,INF,INF,0.000000,0.004,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=36;dir=forward;offset=5.655,INFEASIBLE,INF,INF,INF,INF,0.000000,0.004,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=36;dir=reverse;offset=5.655,INFEASIBLE,INF,INF,INF,INF,0.000000,0.004,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=37;dir=forward;offset=5.812,INFEASIBLE,INF,INF,INF,INF,0.000000,0.004,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=37;dir=reverse;offset=5.812,INFEASIBLE,INF,INF,INF,INF,0.000000,0.004,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=38;dir=forward;offset=5.969,INFEASIBLE,INF,INF,INF,INF,0.000000,0.004,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=38;dir=reverse;offset=5.969,INFEASIBLE,INF,INF,INF,INF,0.000000,0.004,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=39;dir=forward;offset=6.126,INFEASIBLE,INF,INF,INF,INF,0.000000,0.004,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,try=39;dir=reverse;offset=6.126,INFEASIBLE,INF,INF,INF,INF,0.000000,0.004,construction did not produce feasible solution
+vrp_200_16_1,sweep-grid,PHASE_SUMMARY,NOT_USEFUL,INF,INF,INF,INF,0.000000,0.003,candidates=80; feasible=0; improved=0
+vrp_200_16_1,LNS,SKIPPED,NO_INITIAL_FEASIBLE,INF,INF,INF,INF,0.000000,0.004,fallback-regret disabled; no feasible initial solution for LNS
+vrp_26_8_1,savings,noise=0,INFEASIBLE,INF,INF,INF,INF,0.000000,0.000,construction did not produce feasible solution
+vrp_26_8_1,savings,PHASE_SUMMARY,NOT_USEFUL,INF,INF,INF,INF,0.000000,0.000,candidates=1; feasible=0; improved=0
+vrp_26_8_1,sweep-grid,try=0;dir=forward;offset=0.000,INFEASIBLE,INF,INF,INF,INF,0.000000,0.000,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=0;dir=reverse;offset=0.000,INFEASIBLE,INF,INF,INF,INF,0.000000,0.000,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=1;dir=forward;offset=0.157,INFEASIBLE,INF,INF,INF,INF,0.000000,0.000,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=1;dir=reverse;offset=0.157,INFEASIBLE,INF,INF,INF,INF,0.000000,0.000,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=2;dir=forward;offset=0.314,INFEASIBLE,INF,INF,INF,INF,0.000000,0.000,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=2;dir=reverse;offset=0.314,INFEASIBLE,INF,INF,INF,INF,0.000000,0.000,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=3;dir=forward;offset=0.471,INFEASIBLE,INF,INF,INF,INF,0.000000,0.000,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=3;dir=reverse;offset=0.471,INFEASIBLE,INF,INF,INF,INF,0.000000,0.000,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=4;dir=forward;offset=0.628,INFEASIBLE,INF,INF,INF,INF,0.000000,0.000,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=4;dir=reverse;offset=0.628,INFEASIBLE,INF,INF,INF,INF,0.000000,0.000,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=5;dir=forward;offset=0.785,INFEASIBLE,INF,INF,INF,INF,0.000000,0.000,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=5;dir=reverse;offset=0.785,IMPROVED_BEST,746.711871,705.199134,INF,705.199134,INF,0.000,local_gain=41.512737
+vrp_26_8_1,sweep-grid,try=6;dir=forward;offset=0.942,INFEASIBLE,INF,INF,705.199134,705.199134,0.000000,0.000,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=6;dir=reverse;offset=0.942,OK_NO_BEST,746.711871,705.199134,705.199134,705.199134,0.000000,0.000,local_gain=41.512737
+vrp_26_8_1,sweep-grid,try=7;dir=forward;offset=1.100,IMPROVED_BEST,694.860687,650.105558,705.199134,650.105558,55.093576,0.000,local_gain=44.755129
+vrp_26_8_1,sweep-grid,try=7;dir=reverse;offset=1.100,INFEASIBLE,INF,INF,650.105558,650.105558,0.000000,0.000,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=8;dir=forward;offset=1.257,INFEASIBLE,INF,INF,650.105558,650.105558,0.000000,0.000,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=8;dir=reverse;offset=1.257,INFEASIBLE,INF,INF,650.105558,650.105558,0.000000,0.000,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=9;dir=forward;offset=1.414,IMPROVED_BEST,640.641164,639.528127,650.105558,639.528127,10.577431,0.000,local_gain=1.113037
+vrp_26_8_1,sweep-grid,try=9;dir=reverse;offset=1.414,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.000,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=10;dir=forward;offset=1.571,OK_NO_BEST,640.641164,639.528127,639.528127,639.528127,0.000000,0.001,local_gain=1.113037
+vrp_26_8_1,sweep-grid,try=10;dir=reverse;offset=1.571,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=11;dir=forward;offset=1.728,OK_NO_BEST,694.860687,650.105558,639.528127,639.528127,0.000000,0.001,local_gain=44.755129
+vrp_26_8_1,sweep-grid,try=11;dir=reverse;offset=1.728,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=12;dir=forward;offset=1.885,OK_NO_BEST,694.860687,650.105558,639.528127,639.528127,0.000000,0.001,local_gain=44.755129
+vrp_26_8_1,sweep-grid,try=12;dir=reverse;offset=1.885,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=13;dir=forward;offset=2.042,OK_NO_BEST,694.860687,650.105558,639.528127,639.528127,0.000000,0.001,local_gain=44.755129
+vrp_26_8_1,sweep-grid,try=13;dir=reverse;offset=2.042,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=14;dir=forward;offset=2.199,OK_NO_BEST,694.860687,650.105558,639.528127,639.528127,0.000000,0.001,local_gain=44.755129
+vrp_26_8_1,sweep-grid,try=14;dir=reverse;offset=2.199,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=15;dir=forward;offset=2.356,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=15;dir=reverse;offset=2.356,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=16;dir=forward;offset=2.513,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=16;dir=reverse;offset=2.513,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=17;dir=forward;offset=2.670,OK_NO_BEST,640.641164,639.528127,639.528127,639.528127,0.000000,0.001,local_gain=1.113037
+vrp_26_8_1,sweep-grid,try=17;dir=reverse;offset=2.670,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=18;dir=forward;offset=2.827,OK_NO_BEST,640.641164,639.528127,639.528127,639.528127,0.000000,0.001,local_gain=1.113037
+vrp_26_8_1,sweep-grid,try=18;dir=reverse;offset=2.827,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=19;dir=forward;offset=2.985,OK_NO_BEST,640.641164,639.528127,639.528127,639.528127,0.000000,0.001,local_gain=1.113037
+vrp_26_8_1,sweep-grid,try=19;dir=reverse;offset=2.985,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=20;dir=forward;offset=3.142,OK_NO_BEST,640.641164,639.528127,639.528127,639.528127,0.000000,0.001,local_gain=1.113037
+vrp_26_8_1,sweep-grid,try=20;dir=reverse;offset=3.142,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=21;dir=forward;offset=3.299,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=21;dir=reverse;offset=3.299,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=22;dir=forward;offset=3.456,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=22;dir=reverse;offset=3.456,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=23;dir=forward;offset=3.613,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=23;dir=reverse;offset=3.613,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=24;dir=forward;offset=3.770,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=24;dir=reverse;offset=3.770,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=25;dir=forward;offset=3.927,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=25;dir=reverse;offset=3.927,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=26;dir=forward;offset=4.084,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=26;dir=reverse;offset=4.084,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=27;dir=forward;offset=4.241,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=27;dir=reverse;offset=4.241,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=28;dir=forward;offset=4.398,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=28;dir=reverse;offset=4.398,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=29;dir=forward;offset=4.555,OK_NO_BEST,640.641164,639.528127,639.528127,639.528127,0.000000,0.001,local_gain=1.113037
+vrp_26_8_1,sweep-grid,try=29;dir=reverse;offset=4.555,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=30;dir=forward;offset=4.712,OK_NO_BEST,640.641164,639.528127,639.528127,639.528127,0.000000,0.001,local_gain=1.113037
+vrp_26_8_1,sweep-grid,try=30;dir=reverse;offset=4.712,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=31;dir=forward;offset=4.869,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=31;dir=reverse;offset=4.869,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=32;dir=forward;offset=5.027,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=32;dir=reverse;offset=5.027,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=33;dir=forward;offset=5.184,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=33;dir=reverse;offset=5.184,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=34;dir=forward;offset=5.341,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=34;dir=reverse;offset=5.341,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=35;dir=forward;offset=5.498,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=35;dir=reverse;offset=5.498,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=36;dir=forward;offset=5.655,OK_NO_BEST,640.641164,639.528127,639.528127,639.528127,0.000000,0.001,local_gain=1.113037
+vrp_26_8_1,sweep-grid,try=36;dir=reverse;offset=5.655,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=37;dir=forward;offset=5.812,OK_NO_BEST,640.641164,639.528127,639.528127,639.528127,0.000000,0.001,local_gain=1.113037
+vrp_26_8_1,sweep-grid,try=37;dir=reverse;offset=5.812,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=38;dir=forward;offset=5.969,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.001,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=38;dir=reverse;offset=5.969,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.002,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=39;dir=forward;offset=6.126,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.002,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,try=39;dir=reverse;offset=6.126,INFEASIBLE,INF,INF,639.528127,639.528127,0.000000,0.002,construction did not produce feasible solution
+vrp_26_8_1,sweep-grid,PHASE_SUMMARY,USEFUL,INF,INF,INF,639.528127,INF,0.001,candidates=80; feasible=17; improved=3
+vrp_26_8_1,LNS,iter=15;removed=18,IMPROVED_BEST,638.684026,638.684026,639.528127,638.684026,0.844101,0.002,LNS destroy-repair improved incumbent
+vrp_26_8_1,LNS,iter=24;removed=5,IMPROVED_BEST,607.650946,607.650946,638.684026,607.650946,31.033080,0.002,LNS destroy-repair improved incumbent
+vrp_26_8_1,LNS,PROGRESS,USEFUL_SO_FAR,INF,INF,639.528127,607.650946,31.877182,15.002,iter=1293107; feasible=1293107; improved=2
+vrp_26_8_1,LNS,PROGRESS,USEFUL_SO_FAR,INF,INF,639.528127,607.650946,31.877182,30.002,iter=2600246; feasible=2600246; improved=2
+vrp_26_8_1,LNS,PROGRESS,USEFUL_SO_FAR,INF,INF,639.528127,607.650946,31.877182,45.003,iter=3876617; feasible=3876617; improved=2
+vrp_26_8_1,LNS,PHASE_SUMMARY,USEFUL,INF,INF,639.528127,607.650946,31.877182,58.447,candidates=5000001; feasible=5000001; improved=2
+vrp_421_41_1,savings,noise=0,IMPROVED_BEST,1962.375921,1954.015684,INF,1954.015684,INF,0.008,local_gain=8.360237
+vrp_421_41_1,savings,PHASE_SUMMARY,USEFUL,INF,INF,INF,1954.015684,INF,0.008,candidates=1; feasible=1; improved=1
+vrp_421_41_1,sweep-grid,try=0;dir=forward;offset=0.000,OK_NO_BEST,2338.332113,2122.714707,1954.015684,1954.015684,0.000000,0.020,local_gain=215.617406
+vrp_421_41_1,sweep-grid,try=0;dir=reverse;offset=0.000,OK_NO_BEST,2347.287130,2116.222298,1954.015684,1954.015684,0.000000,0.036,local_gain=231.064832
+vrp_421_41_1,sweep-grid,try=1;dir=forward;offset=0.157,OK_NO_BEST,2421.465903,2117.743002,1954.015684,1954.015684,0.000000,0.057,local_gain=303.722901
+vrp_421_41_1,sweep-grid,try=1;dir=reverse;offset=0.157,OK_NO_BEST,2399.005527,2129.262912,1954.015684,1954.015684,0.000000,0.071,local_gain=269.742615
+vrp_421_41_1,sweep-grid,try=2;dir=forward;offset=0.314,OK_NO_BEST,2369.653231,2080.628044,1954.015684,1954.015684,0.000000,0.087,local_gain=289.025187
+vrp_421_41_1,sweep-grid,try=2;dir=reverse;offset=0.314,OK_NO_BEST,2349.168976,2093.756988,1954.015684,1954.015684,0.000000,0.100,local_gain=255.411988
+vrp_421_41_1,sweep-grid,try=3;dir=forward;offset=0.471,OK_NO_BEST,2394.484871,2142.443240,1954.015684,1954.015684,0.000000,0.113,local_gain=252.041631
+vrp_421_41_1,sweep-grid,try=3;dir=reverse;offset=0.471,OK_NO_BEST,2442.338768,2141.161988,1954.015684,1954.015684,0.000000,0.240,local_gain=301.176781
+vrp_421_41_1,sweep-grid,try=4;dir=forward;offset=0.628,OK_NO_BEST,2343.226385,2139.109067,1954.015684,1954.015684,0.000000,0.256,local_gain=204.117318
+vrp_421_41_1,sweep-grid,try=4;dir=reverse;offset=0.628,OK_NO_BEST,2362.262554,2073.047951,1954.015684,1954.015684,0.000000,0.279,local_gain=289.214603
+vrp_421_41_1,sweep-grid,try=5;dir=forward;offset=0.785,OK_NO_BEST,2362.785205,2093.978372,1954.015684,1954.015684,0.000000,0.297,local_gain=268.806834
+vrp_421_41_1,sweep-grid,try=5;dir=reverse;offset=0.785,OK_NO_BEST,2354.921419,2132.672275,1954.015684,1954.015684,0.000000,0.313,local_gain=222.249145
+vrp_421_41_1,sweep-grid,try=6;dir=forward;offset=0.942,OK_NO_BEST,2349.047223,2111.257760,1954.015684,1954.015684,0.000000,0.326,local_gain=237.789463
+vrp_421_41_1,sweep-grid,try=6;dir=reverse;offset=0.942,OK_NO_BEST,2361.159932,2187.268002,1954.015684,1954.015684,0.000000,0.337,local_gain=173.891929
+vrp_421_41_1,sweep-grid,try=7;dir=forward;offset=1.100,OK_NO_BEST,2335.096734,2098.307421,1954.015684,1954.015684,0.000000,0.354,local_gain=236.789313
+vrp_421_41_1,sweep-grid,try=7;dir=reverse;offset=1.100,OK_NO_BEST,2340.603976,2119.952202,1954.015684,1954.015684,0.000000,0.369,local_gain=220.651774
+vrp_421_41_1,sweep-grid,try=8;dir=forward;offset=1.257,OK_NO_BEST,2345.042799,2051.109656,1954.015684,1954.015684,0.000000,0.384,local_gain=293.933143
+vrp_421_41_1,sweep-grid,try=8;dir=reverse;offset=1.257,OK_NO_BEST,2349.865857,2092.109361,1954.015684,1954.015684,0.000000,0.398,local_gain=257.756497
+vrp_421_41_1,sweep-grid,try=9;dir=forward;offset=1.414,OK_NO_BEST,2394.836836,2139.036753,1954.015684,1954.015684,0.000000,0.410,local_gain=255.800084
+vrp_421_41_1,sweep-grid,try=9;dir=reverse;offset=1.414,OK_NO_BEST,2355.944852,2144.475891,1954.015684,1954.015684,0.000000,0.422,local_gain=211.468961
+vrp_421_41_1,sweep-grid,try=10;dir=forward;offset=1.571,OK_NO_BEST,2390.026412,2106.040917,1954.015684,1954.015684,0.000000,0.438,local_gain=283.985495
+vrp_421_41_1,sweep-grid,try=10;dir=reverse;offset=1.571,OK_NO_BEST,2404.402090,2075.891781,1954.015684,1954.015684,0.000000,0.453,local_gain=328.510310
+vrp_421_41_1,sweep-grid,try=11;dir=forward;offset=1.728,OK_NO_BEST,2360.584264,2071.514944,1954.015684,1954.015684,0.000000,0.470,local_gain=289.069320
+vrp_421_41_1,sweep-grid,try=11;dir=reverse;offset=1.728,OK_NO_BEST,2379.231963,2136.259717,1954.015684,1954.015684,0.000000,0.481,local_gain=242.972246
+vrp_421_41_1,sweep-grid,try=12;dir=forward;offset=1.885,OK_NO_BEST,2336.358900,2103.897095,1954.015684,1954.015684,0.000000,0.497,local_gain=232.461806
+vrp_421_41_1,sweep-grid,try=12;dir=reverse;offset=1.885,OK_NO_BEST,2326.883713,2048.817327,1954.015684,1954.015684,0.000000,0.513,local_gain=278.066386
+vrp_421_41_1,sweep-grid,try=13;dir=forward;offset=2.042,OK_NO_BEST,2358.832758,2117.797578,1954.015684,1954.015684,0.000000,0.530,local_gain=241.035180
+vrp_421_41_1,sweep-grid,try=13;dir=reverse;offset=2.042,OK_NO_BEST,2354.258134,2122.260072,1954.015684,1954.015684,0.000000,0.543,local_gain=231.998062
+vrp_421_41_1,sweep-grid,try=14;dir=forward;offset=2.199,OK_NO_BEST,2360.150562,2135.700834,1954.015684,1954.015684,0.000000,0.557,local_gain=224.449727
+vrp_421_41_1,sweep-grid,try=14;dir=reverse;offset=2.199,OK_NO_BEST,2338.478712,2101.844172,1954.015684,1954.015684,0.000000,0.571,local_gain=236.634540
+vrp_421_41_1,sweep-grid,try=15;dir=forward;offset=2.356,OK_NO_BEST,2338.736407,2121.337868,1954.015684,1954.015684,0.000000,0.588,local_gain=217.398539
+vrp_421_41_1,sweep-grid,try=15;dir=reverse;offset=2.356,OK_NO_BEST,2358.759609,2099.277316,1954.015684,1954.015684,0.000000,0.607,local_gain=259.482293
+vrp_421_41_1,sweep-grid,try=16;dir=forward;offset=2.513,OK_NO_BEST,2367.348100,2078.432475,1954.015684,1954.015684,0.000000,0.622,local_gain=288.915625
+vrp_421_41_1,sweep-grid,try=16;dir=reverse;offset=2.513,OK_NO_BEST,2364.703399,2151.811333,1954.015684,1954.015684,0.000000,0.638,local_gain=212.892066
+vrp_421_41_1,sweep-grid,try=17;dir=forward;offset=2.670,OK_NO_BEST,2430.010521,2103.957307,1954.015684,1954.015684,0.000000,0.659,local_gain=326.053214
+vrp_421_41_1,sweep-grid,try=17;dir=reverse;offset=2.670,OK_NO_BEST,2408.029107,2095.168360,1954.015684,1954.015684,0.000000,0.677,local_gain=312.860746
+vrp_421_41_1,sweep-grid,try=18;dir=forward;offset=2.827,OK_NO_BEST,2343.167576,2071.788787,1954.015684,1954.015684,0.000000,0.698,local_gain=271.378788
+vrp_421_41_1,sweep-grid,try=18;dir=reverse;offset=2.827,OK_NO_BEST,2372.018332,2073.836832,1954.015684,1954.015684,0.000000,0.716,local_gain=298.181500
+vrp_421_41_1,sweep-grid,try=19;dir=forward;offset=2.985,OK_NO_BEST,2400.710565,2114.243639,1954.015684,1954.015684,0.000000,0.734,local_gain=286.466926
+vrp_421_41_1,sweep-grid,try=19;dir=reverse;offset=2.985,OK_NO_BEST,2405.982706,2117.283212,1954.015684,1954.015684,0.000000,0.750,local_gain=288.699493
+vrp_421_41_1,sweep-grid,try=20;dir=forward;offset=3.142,OK_NO_BEST,2340.639016,2133.415775,1954.015684,1954.015684,0.000000,0.767,local_gain=207.223241
+vrp_421_41_1,sweep-grid,try=20;dir=reverse;offset=3.142,OK_NO_BEST,2347.182152,2129.654216,1954.015684,1954.015684,0.000000,0.782,local_gain=217.527936
+vrp_421_41_1,sweep-grid,try=21;dir=forward;offset=3.299,OK_NO_BEST,2411.539168,2122.936645,1954.015684,1954.015684,0.000000,0.798,local_gain=288.602524
+vrp_421_41_1,sweep-grid,try=21;dir=reverse;offset=3.299,OK_NO_BEST,2412.715585,2119.278809,1954.015684,1954.015684,0.000000,0.816,local_gain=293.436776
+vrp_421_41_1,sweep-grid,try=22;dir=forward;offset=3.456,OK_NO_BEST,2366.587097,2102.371089,1954.015684,1954.015684,0.000000,0.829,local_gain=264.216007
+vrp_421_41_1,sweep-grid,try=22;dir=reverse;offset=3.456,OK_NO_BEST,2338.710383,2054.002270,1954.015684,1954.015684,0.000000,0.842,local_gain=284.708113
+vrp_421_41_1,sweep-grid,try=23;dir=forward;offset=3.613,OK_NO_BEST,2421.317204,2136.660124,1954.015684,1954.015684,0.000000,0.857,local_gain=284.657080
+vrp_421_41_1,sweep-grid,try=23;dir=reverse;offset=3.613,OK_NO_BEST,2411.135894,2070.870150,1954.015684,1954.015684,0.000000,0.880,local_gain=340.265744
+vrp_421_41_1,sweep-grid,try=24;dir=forward;offset=3.770,OK_NO_BEST,2348.974096,2126.147289,1954.015684,1954.015684,0.000000,0.896,local_gain=222.826807
+vrp_421_41_1,sweep-grid,try=24;dir=reverse;offset=3.770,OK_NO_BEST,2361.460848,2051.129095,1954.015684,1954.015684,0.000000,0.913,local_gain=310.331753
+vrp_421_41_1,sweep-grid,try=25;dir=forward;offset=3.927,OK_NO_BEST,2338.979452,2083.492166,1954.015684,1954.015684,0.000000,0.929,local_gain=255.487286
+vrp_421_41_1,sweep-grid,try=25;dir=reverse;offset=3.927,OK_NO_BEST,2347.440189,2109.266901,1954.015684,1954.015684,0.000000,0.943,local_gain=238.173288
+vrp_421_41_1,sweep-grid,try=26;dir=forward;offset=4.084,OK_NO_BEST,2339.618844,2105.191306,1954.015684,1954.015684,0.000000,0.958,local_gain=234.427538
+vrp_421_41_1,sweep-grid,try=26;dir=reverse;offset=4.084,OK_NO_BEST,2380.866458,2085.427468,1954.015684,1954.015684,0.000000,0.971,local_gain=295.438990
+vrp_421_41_1,sweep-grid,try=27;dir=forward;offset=4.241,OK_NO_BEST,2324.896222,2132.626446,1954.015684,1954.015684,0.000000,0.985,local_gain=192.269775
+vrp_421_41_1,sweep-grid,try=27;dir=reverse;offset=4.241,OK_NO_BEST,2343.379859,2120.002799,1954.015684,1954.015684,0.000000,0.999,local_gain=223.377060
+vrp_421_41_1,sweep-grid,try=28;dir=forward;offset=4.398,OK_NO_BEST,2356.598346,2090.247193,1954.015684,1954.015684,0.000000,1.011,local_gain=266.351153
+vrp_421_41_1,sweep-grid,try=28;dir=reverse;offset=4.398,OK_NO_BEST,2343.257446,2112.281616,1954.015684,1954.015684,0.000000,1.022,local_gain=230.975829
+vrp_421_41_1,sweep-grid,try=29;dir=forward;offset=4.555,OK_NO_BEST,2388.874679,2112.782578,1954.015684,1954.015684,0.000000,1.032,local_gain=276.092101
+vrp_421_41_1,sweep-grid,try=29;dir=reverse;offset=4.555,OK_NO_BEST,2352.394316,2102.131108,1954.015684,1954.015684,0.000000,1.047,local_gain=250.263209
+vrp_421_41_1,sweep-grid,try=30;dir=forward;offset=4.712,OK_NO_BEST,2377.680392,2053.013198,1954.015684,1954.015684,0.000000,1.070,local_gain=324.667194
+vrp_421_41_1,sweep-grid,try=30;dir=reverse;offset=4.712,OK_NO_BEST,2369.295271,2058.591849,1954.015684,1954.015684,0.000000,1.087,local_gain=310.703422
+vrp_421_41_1,sweep-grid,try=31;dir=forward;offset=4.869,OK_NO_BEST,2355.192317,2103.860000,1954.015684,1954.015684,0.000000,1.098,local_gain=251.332317
+vrp_421_41_1,sweep-grid,try=31;dir=reverse;offset=4.869,OK_NO_BEST,2361.454257,2130.882181,1954.015684,1954.015684,0.000000,1.108,local_gain=230.572076
+vrp_421_41_1,sweep-grid,try=32;dir=forward;offset=5.027,OK_NO_BEST,2347.384458,2133.920317,1954.015684,1954.015684,0.000000,1.120,local_gain=213.464141
+vrp_421_41_1,sweep-grid,try=32;dir=reverse;offset=5.027,OK_NO_BEST,2363.559320,2090.041856,1954.015684,1954.015684,0.000000,1.143,local_gain=273.517464
+vrp_421_41_1,sweep-grid,try=33;dir=forward;offset=5.184,OK_NO_BEST,2362.772564,2096.243228,1954.015684,1954.015684,0.000000,1.157,local_gain=266.529335
+vrp_421_41_1,sweep-grid,try=33;dir=reverse;offset=5.184,OK_NO_BEST,2355.650217,2102.484827,1954.015684,1954.015684,0.000000,1.175,local_gain=253.165390
+vrp_421_41_1,sweep-grid,try=34;dir=forward;offset=5.341,OK_NO_BEST,2359.955477,2133.558413,1954.015684,1954.015684,0.000000,1.187,local_gain=226.397064
+vrp_421_41_1,sweep-grid,try=34;dir=reverse;offset=5.341,OK_NO_BEST,2333.930119,2116.658074,1954.015684,1954.015684,0.000000,1.201,local_gain=217.272045
+vrp_421_41_1,sweep-grid,try=35;dir=forward;offset=5.498,OK_NO_BEST,2360.395637,2080.729639,1954.015684,1954.015684,0.000000,1.216,local_gain=279.665998
+vrp_421_41_1,sweep-grid,try=35;dir=reverse;offset=5.498,OK_NO_BEST,2359.714149,2062.430667,1954.015684,1954.015684,0.000000,1.233,local_gain=297.283482
+vrp_421_41_1,sweep-grid,try=36;dir=forward;offset=5.655,OK_NO_BEST,2351.139881,2040.398971,1954.015684,1954.015684,0.000000,1.247,local_gain=310.740910
+vrp_421_41_1,sweep-grid,try=36;dir=reverse;offset=5.655,OK_NO_BEST,2351.924874,2126.407562,1954.015684,1954.015684,0.000000,1.259,local_gain=225.517313
+vrp_421_41_1,sweep-grid,try=37;dir=forward;offset=5.812,OK_NO_BEST,2413.188101,2111.156082,1954.015684,1954.015684,0.000000,1.276,local_gain=302.032019
+vrp_421_41_1,sweep-grid,try=37;dir=reverse;offset=5.812,OK_NO_BEST,2418.814386,2111.882369,1954.015684,1954.015684,0.000000,1.294,local_gain=306.932016
+vrp_421_41_1,sweep-grid,try=38;dir=forward;offset=5.969,OK_NO_BEST,2358.995426,2096.560742,1954.015684,1954.015684,0.000000,1.311,local_gain=262.434684
+vrp_421_41_1,sweep-grid,try=38;dir=reverse;offset=5.969,OK_NO_BEST,2366.738033,2140.167300,1954.015684,1954.015684,0.000000,1.323,local_gain=226.570733
+vrp_421_41_1,sweep-grid,try=39;dir=forward;offset=6.126,OK_NO_BEST,2416.395563,2139.579672,1954.015684,1954.015684,0.000000,1.341,local_gain=276.815891
+vrp_421_41_1,sweep-grid,try=39;dir=reverse;offset=6.126,OK_NO_BEST,2428.109197,2113.548366,1954.015684,1954.015684,0.000000,1.360,local_gain=314.560831
+vrp_421_41_1,sweep-grid,PHASE_SUMMARY,NOT_USEFUL,INF,INF,1954.015684,1954.015684,0.000000,1.352,candidates=80; feasible=80; improved=0
+vrp_421_41_1,LNS,iter=3;removed=19,IMPROVED_BEST,1950.872461,1950.872461,1954.015684,1950.872461,3.143223,1.369,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=4;removed=24,IMPROVED_BEST,1950.342291,1950.342291,1950.872461,1950.342291,0.530169,1.369,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=10;removed=19,IMPROVED_BEST,1950.069644,1950.069644,1950.342291,1950.069644,0.272647,1.383,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=12;removed=29,IMPROVED_BEST,1948.349930,1948.349930,1950.069644,1948.349930,1.719714,1.384,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=13;removed=34,IMPROVED_BEST,1941.429989,1941.429989,1948.349930,1941.429989,6.919941,1.390,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=27;removed=34,IMPROVED_BEST,1941.429986,1941.429986,1941.429989,1941.429986,0.000003,1.415,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=29;removed=9,IMPROVED_BEST,1941.429983,1941.429983,1941.429986,1941.429983,0.000003,1.416,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=30;removed=14,IMPROVED_BEST,1941.429980,1941.429980,1941.429983,1941.429980,0.000003,1.417,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=34;removed=34,IMPROVED_BEST,1941.218455,1941.218455,1941.429980,1941.218455,0.211525,1.434,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=40;removed=29,IMPROVED_BEST,1940.229488,1940.229488,1941.218455,1940.229488,0.988967,1.438,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=46;removed=24,IMPROVED_BEST,1939.467125,1939.467125,1940.229488,1939.467125,0.762363,1.446,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=47;removed=29,IMPROVED_BEST,1938.592170,1938.592170,1939.467125,1938.592170,0.874955,1.451,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=48;removed=34,IMPROVED_BEST,1938.250331,1938.250331,1938.592170,1938.250331,0.341839,1.453,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=55;removed=34,IMPROVED_BEST,1936.202604,1936.202604,1938.250331,1936.202604,2.047727,1.464,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=75;removed=29,IMPROVED_BEST,1935.009616,1935.009616,1936.202604,1935.009616,1.192988,1.485,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=80;removed=19,IMPROVED_BEST,1934.421839,1934.421839,1935.009616,1934.421839,0.587776,1.490,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=83;removed=34,IMPROVED_BEST,1933.546704,1933.546704,1934.421839,1933.546704,0.875135,1.493,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=96;removed=29,IMPROVED_BEST,1931.582610,1931.582610,1933.546704,1931.582610,1.964094,1.508,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=124;removed=29,IMPROVED_BEST,1931.556790,1931.556790,1931.582610,1931.556790,0.025821,1.539,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=144;removed=24,IMPROVED_BEST,1931.556765,1931.556765,1931.556790,1931.556765,0.000024,1.566,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=150;removed=19,IMPROVED_BEST,1927.822534,1927.822534,1931.556765,1927.822534,3.734231,1.575,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=151;removed=24,IMPROVED_BEST,1927.453946,1927.453946,1927.822534,1927.453946,0.368588,1.577,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=162;removed=9,IMPROVED_BEST,1925.050439,1925.050439,1927.453946,1925.050439,2.403507,1.594,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=171;removed=19,IMPROVED_BEST,1921.261703,1921.261703,1925.050439,1921.261703,3.788736,1.605,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=185;removed=19,IMPROVED_BEST,1919.003495,1919.003495,1921.261703,1919.003495,2.258208,1.622,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=187;removed=29,IMPROVED_BEST,1919.003492,1919.003492,1919.003495,1919.003492,0.000003,1.623,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=191;removed=14,IMPROVED_BEST,1918.233644,1918.233644,1919.003492,1918.233644,0.769847,1.634,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=202;removed=34,IMPROVED_BEST,1917.466600,1917.466600,1918.233644,1917.466600,0.767044,1.651,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=209;removed=34,IMPROVED_BEST,1916.916100,1916.916100,1917.466600,1916.916100,0.550501,1.663,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=223;removed=34,IMPROVED_BEST,1916.916072,1916.916072,1916.916100,1916.916072,0.000028,1.678,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=228;removed=24,IMPROVED_BEST,1916.588373,1916.588373,1916.916072,1916.588373,0.327699,1.682,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=235;removed=24,IMPROVED_BEST,1916.560724,1916.560724,1916.588373,1916.560724,0.027649,1.691,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=241;removed=19,IMPROVED_BEST,1916.502619,1916.502619,1916.560724,1916.502619,0.058105,1.699,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=242;removed=24,IMPROVED_BEST,1916.502616,1916.502616,1916.502619,1916.502616,0.000003,1.699,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=271;removed=29,IMPROVED_BEST,1916.267793,1916.267793,1916.502616,1916.267793,0.234823,1.745,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=334;removed=29,IMPROVED_BEST,1914.850666,1914.850666,1916.267793,1914.850666,1.417127,1.837,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=347;removed=24,IMPROVED_BEST,1914.847781,1914.847781,1914.850666,1914.847781,0.002885,1.857,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=349;removed=34,IMPROVED_BEST,1914.740074,1914.740074,1914.847781,1914.740074,0.107707,1.859,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=377;removed=34,IMPROVED_BEST,1911.486360,1911.486360,1914.740074,1911.486360,3.253713,1.880,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=396;removed=24,IMPROVED_BEST,1909.750722,1909.750722,1911.486360,1909.750722,1.735638,1.905,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=423;removed=19,IMPROVED_BEST,1909.750719,1909.750719,1909.750722,1909.750719,0.000003,1.946,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=465;removed=19,IMPROVED_BEST,1909.669050,1909.669050,1909.750719,1909.669050,0.081669,2.015,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=500;removed=19,IMPROVED_BEST,1907.410839,1907.410839,1909.669050,1907.410839,2.258211,2.074,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=545;removed=34,IMPROVED_BEST,1906.852004,1906.852004,1907.410839,1906.852004,0.558835,2.138,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=720;removed=34,IMPROVED_BEST,1906.134815,1906.134815,1906.852004,1906.134815,0.717189,2.346,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=747;removed=29,IMPROVED_BEST,1904.905900,1904.905900,1906.134815,1904.905900,1.228915,2.383,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=762;removed=34,IMPROVED_BEST,1904.532601,1904.532601,1904.905900,1904.532601,0.373299,2.398,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=867;removed=34,IMPROVED_BEST,1903.966293,1903.966293,1904.532601,1903.966293,0.566308,2.508,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=972;removed=34,IMPROVED_BEST,1903.862316,1903.862316,1903.966293,1903.862316,0.103976,2.619,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=984;removed=24,IMPROVED_BEST,1902.770105,1902.770105,1903.862316,1902.770105,1.092211,2.626,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=1080;removed=14,IMPROVED_BEST,1898.288417,1898.288417,1902.770105,1898.288417,4.481688,2.750,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=1273;removed=34,IMPROVED_BEST,1897.885150,1897.885150,1898.288417,1897.885150,0.403267,2.930,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=1279;removed=29,IMPROVED_BEST,1897.762426,1897.762426,1897.885150,1897.762426,0.122724,2.934,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=1294;removed=34,IMPROVED_BEST,1897.693939,1897.693939,1897.762426,1897.693939,0.068487,2.947,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=1434;removed=34,IMPROVED_BEST,1897.508587,1897.508587,1897.693939,1897.508587,0.185352,3.106,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=1607;removed=24,IMPROVED_BEST,1897.232534,1897.232534,1897.508587,1897.232534,0.276053,3.252,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=2085;removed=34,IMPROVED_BEST,1896.580572,1896.580572,1897.232534,1896.580572,0.651962,3.734,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=2201;removed=19,IMPROVED_BEST,1895.985655,1895.985655,1896.580572,1895.985655,0.594917,3.847,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=2210;removed=29,IMPROVED_BEST,1895.253729,1895.253729,1895.985655,1895.253729,0.731926,3.853,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=2318;removed=9,IMPROVED_BEST,1895.221343,1895.221343,1895.253729,1895.221343,0.032386,3.963,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=2323;removed=34,IMPROVED_BEST,1895.060374,1895.060374,1895.221343,1895.060374,0.160969,3.971,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=2349;removed=24,IMPROVED_BEST,1894.706316,1894.706316,1895.060374,1894.706316,0.354058,3.999,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=2393;removed=34,IMPROVED_BEST,1894.619850,1894.619850,1894.706316,1894.619850,0.086466,4.050,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=2419;removed=24,IMPROVED_BEST,1894.446786,1894.446786,1894.619850,1894.446786,0.173064,4.072,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=2637;removed=29,IMPROVED_BEST,1893.829362,1893.829362,1894.446786,1893.829362,0.617424,4.339,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=2645;removed=34,IMPROVED_BEST,1892.895062,1892.895062,1893.829362,1892.895062,0.934301,4.346,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=2663;removed=19,IMPROVED_BEST,1892.895059,1892.895059,1892.895062,1892.895059,0.000003,4.363,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=2671;removed=24,IMPROVED_BEST,1891.184946,1891.184946,1892.895059,1891.184946,1.710113,4.373,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=2672;removed=29,IMPROVED_BEST,1891.001091,1891.001091,1891.184946,1891.001091,0.183854,4.378,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=2707;removed=29,IMPROVED_BEST,1890.756745,1890.756745,1891.001091,1890.756745,0.244346,4.408,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=2756;removed=29,IMPROVED_BEST,1890.536924,1890.536924,1890.756745,1890.536924,0.219821,4.456,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=2763;removed=29,IMPROVED_BEST,1890.514665,1890.514665,1890.536924,1890.514665,0.022259,4.460,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=2778;removed=34,IMPROVED_BEST,1890.128676,1890.128676,1890.514665,1890.128676,0.385989,4.487,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=2874;removed=24,IMPROVED_BEST,1889.966380,1889.966380,1890.128676,1889.966380,0.162296,4.558,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=2901;removed=19,IMPROVED_BEST,1889.799648,1889.799648,1889.966380,1889.799648,0.166733,4.578,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=2977;removed=14,IMPROVED_BEST,1889.687210,1889.687210,1889.799648,1889.687210,0.112438,4.644,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=3093;removed=34,IMPROVED_BEST,1889.659737,1889.659737,1889.687210,1889.659737,0.027473,4.758,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=3119;removed=24,IMPROVED_BEST,1889.659618,1889.659618,1889.659737,1889.659618,0.000120,4.789,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=3168;removed=24,IMPROVED_BEST,1889.587569,1889.587569,1889.659618,1889.587569,0.072048,4.837,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=3197;removed=29,IMPROVED_BEST,1889.432712,1889.432712,1889.587569,1889.432712,0.154858,4.870,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=3202;removed=19,IMPROVED_BEST,1888.198345,1888.198345,1889.432712,1888.198345,1.234367,4.878,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=3282;removed=34,IMPROVED_BEST,1885.001142,1885.001142,1888.198345,1885.001142,3.197203,4.947,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=3351;removed=29,IMPROVED_BEST,1884.987416,1884.987416,1885.001142,1884.987416,0.013726,5.012,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=3357;removed=24,IMPROVED_BEST,1884.313805,1884.313805,1884.987416,1884.313805,0.673611,5.017,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=3443;removed=34,IMPROVED_BEST,1884.232804,1884.232804,1884.313805,1884.232804,0.081001,5.105,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=3518;removed=24,IMPROVED_BEST,1883.811657,1883.811657,1884.232804,1883.811657,0.421147,5.178,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=3525;removed=24,IMPROVED_BEST,1883.691025,1883.691025,1883.811657,1883.691025,0.120632,5.184,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=3557;removed=9,IMPROVED_BEST,1883.346901,1883.346901,1883.691025,1883.346901,0.344124,5.206,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=3562;removed=34,IMPROVED_BEST,1883.252252,1883.252252,1883.346901,1883.252252,0.094649,5.210,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=3653;removed=34,IMPROVED_BEST,1883.076475,1883.076475,1883.252252,1883.076475,0.175777,5.272,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=3812;removed=24,IMPROVED_BEST,1882.483263,1882.483263,1883.076475,1882.483263,0.593213,5.420,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=3863;removed=34,IMPROVED_BEST,1882.201655,1882.201655,1882.483263,1882.201655,0.281607,5.457,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=3868;removed=24,IMPROVED_BEST,1882.201652,1882.201652,1882.201655,1882.201652,0.000003,5.460,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=4051;removed=29,IMPROVED_BEST,1882.179386,1882.179386,1882.201652,1882.179386,0.022267,5.633,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=4202;removed=14,IMPROVED_BEST,1881.953984,1881.953984,1882.179386,1881.953984,0.225402,5.752,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=4839;removed=14,IMPROVED_BEST,1881.360603,1881.360603,1881.953984,1881.360603,0.593381,6.285,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=4883;removed=24,IMPROVED_BEST,1879.910651,1879.910651,1881.360603,1879.910651,1.449951,6.326,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=5178;removed=29,IMPROVED_BEST,1879.591138,1879.591138,1879.910651,1879.591138,0.319514,6.532,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=5308;removed=14,IMPROVED_BEST,1878.615682,1878.615682,1879.591138,1878.615682,0.975456,6.645,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=5661;removed=29,IMPROVED_BEST,1878.291402,1878.291402,1878.615682,1878.291402,0.324279,6.905,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=5835;removed=24,IMPROVED_BEST,1878.214169,1878.214169,1878.291402,1878.214169,0.077234,7.039,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=5962;removed=29,IMPROVED_BEST,1878.118165,1878.118165,1878.214169,1878.118165,0.096003,7.139,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=6172;removed=29,IMPROVED_BEST,1876.721313,1876.721313,1878.118165,1876.721313,1.396853,7.294,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=6178;removed=24,IMPROVED_BEST,1876.721193,1876.721193,1876.721313,1876.721193,0.000120,7.297,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=6607;removed=34,IMPROVED_BEST,1876.643773,1876.643773,1876.721193,1876.643773,0.077420,7.609,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=6625;removed=19,IMPROVED_BEST,1876.643770,1876.643770,1876.643773,1876.643770,0.000003,7.621,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=6670;removed=34,IMPROVED_BEST,1876.636812,1876.636812,1876.643770,1876.636812,0.006957,7.653,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=6674;removed=19,IMPROVED_BEST,1875.290752,1875.290752,1876.636812,1875.290752,1.346061,7.657,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=6921;removed=29,IMPROVED_BEST,1874.984515,1874.984515,1875.290752,1874.984515,0.306237,7.826,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=8018;removed=19,IMPROVED_BEST,1874.907249,1874.907249,1874.984515,1874.907249,0.077266,8.587,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=8139;removed=29,IMPROVED_BEST,1874.358451,1874.358451,1874.907249,1874.358451,0.548798,8.677,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=8146;removed=29,IMPROVED_BEST,1874.287823,1874.287823,1874.358451,1874.287823,0.070627,8.684,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=8195;removed=29,IMPROVED_BEST,1874.117821,1874.117821,1874.287823,1874.117821,0.170002,8.721,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=8198;removed=9,IMPROVED_BEST,1873.773697,1873.773697,1874.117821,1873.773697,0.344124,8.722,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=8203;removed=34,IMPROVED_BEST,1873.170310,1873.170310,1873.773697,1873.170310,0.603387,8.729,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=8453;removed=24,IMPROVED_BEST,1872.897583,1872.897583,1873.170310,1872.897583,0.272727,8.916,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=8609;removed=34,IMPROVED_BEST,1872.303802,1872.303802,1872.897583,1872.303802,0.593781,9.019,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=8765;removed=9,IMPROVED_BEST,1870.625902,1870.625902,1872.303802,1870.625902,1.677900,9.128,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=9399;removed=29,IMPROVED_BEST,1870.187777,1870.187777,1870.625902,1870.187777,0.438125,9.620,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=9456;removed=34,IMPROVED_BEST,1869.383836,1869.383836,1870.187777,1869.383836,0.803941,9.662,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=9617;removed=34,IMPROVED_BEST,1869.235337,1869.235337,1869.383836,1869.235337,0.148499,9.765,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=9777;removed=29,IMPROVED_BEST,1869.144777,1869.144777,1869.235337,1869.144777,0.090560,9.875,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=10057;removed=29,IMPROVED_BEST,1868.921197,1868.921197,1869.144777,1868.921197,0.223579,10.069,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=10071;removed=29,IMPROVED_BEST,1868.546444,1868.546444,1868.921197,1868.546444,0.374754,10.078,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=10083;removed=19,IMPROVED_BEST,1868.504822,1868.504822,1868.546444,1868.504822,0.041621,10.087,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=12505;removed=19,IMPROVED_BEST,1868.001916,1868.001916,1868.504822,1868.001916,0.502906,11.723,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=13627;removed=29,IMPROVED_BEST,1867.747798,1867.747798,1868.001916,1867.747798,0.254118,12.493,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=15693;removed=34,IMPROVED_BEST,1867.280748,1867.280748,1867.747798,1867.280748,0.467050,13.983,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=16169;removed=34,IMPROVED_BEST,1867.162374,1867.162374,1867.280748,1867.162374,0.118375,14.345,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=16419;removed=24,IMPROVED_BEST,1865.493166,1865.493166,1867.162374,1865.493166,1.669207,14.531,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=16490;removed=29,IMPROVED_BEST,1865.493069,1865.493069,1865.493166,1865.493069,0.000098,14.588,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=16937;removed=24,IMPROVED_BEST,1865.216801,1865.216801,1865.493069,1865.216801,0.276267,14.899,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=18724;removed=34,IMPROVED_BEST,1865.062891,1865.062891,1865.216801,1865.062891,0.153910,16.224,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,PROGRESS,USEFUL_SO_FAR,INF,INF,1954.015684,1865.062891,88.952793,16.361,iter=18899; feasible=18899; improved=133
+vrp_421_41_1,LNS,iter=27576;removed=19,IMPROVED_BEST,1864.827724,1864.827724,1865.062891,1864.827724,0.235167,22.881,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=27599;removed=29,IMPROVED_BEST,1864.491011,1864.491011,1864.827724,1864.491011,0.336713,22.897,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=27606;removed=29,IMPROVED_BEST,1864.301525,1864.301525,1864.491011,1864.301525,0.189485,22.907,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=27632;removed=19,IMPROVED_BEST,1864.301406,1864.301406,1864.301525,1864.301406,0.000120,22.925,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=28237;removed=34,IMPROVED_BEST,1863.986274,1863.986274,1864.301406,1863.986274,0.315132,23.340,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=28628;removed=29,IMPROVED_BEST,1863.541374,1863.541374,1863.986274,1863.541374,0.444900,23.615,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=29111;removed=29,IMPROVED_BEST,1863.055147,1863.055147,1863.541374,1863.055147,0.486228,23.972,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=32604;removed=29,IMPROVED_BEST,1861.834101,1861.834101,1863.055147,1861.834101,1.221046,26.621,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=32826;removed=19,IMPROVED_BEST,1861.781652,1861.781652,1861.834101,1861.781652,0.052449,26.788,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=32828;removed=29,IMPROVED_BEST,1861.583608,1861.583608,1861.781652,1861.583608,0.198044,26.790,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=33074;removed=34,IMPROVED_BEST,1861.044396,1861.044396,1861.583608,1861.044396,0.539213,26.984,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=33087;removed=29,IMPROVED_BEST,1860.810316,1860.810316,1861.044396,1860.810316,0.234080,26.992,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=33655;removed=34,IMPROVED_BEST,1860.742461,1860.742461,1860.810316,1860.742461,0.067855,27.390,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,PROGRESS,USEFUL_SO_FAR,INF,INF,1954.015684,1860.742461,93.273223,31.362,iter=39158; feasible=39158; improved=146
+vrp_421_41_1,LNS,iter=39987;removed=19,IMPROVED_BEST,1860.329848,1860.329848,1860.742461,1860.329848,0.412612,31.995,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=39994;removed=19,IMPROVED_BEST,1860.329750,1860.329750,1860.329848,1860.329750,0.000098,31.999,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=39995;removed=24,IMPROVED_BEST,1860.329734,1860.329734,1860.329750,1860.329734,0.000016,32.000,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=39996;removed=29,IMPROVED_BEST,1860.329698,1860.329698,1860.329734,1860.329698,0.000037,32.001,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=40003;removed=29,IMPROVED_BEST,1859.568279,1859.568279,1860.329698,1859.568279,0.761419,32.005,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=40053;removed=34,IMPROVED_BEST,1859.500424,1859.500424,1859.568279,1859.500424,0.067855,32.044,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=41976;removed=24,IMPROVED_BEST,1859.413837,1859.413837,1859.500424,1859.413837,0.086586,33.424,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=41992;removed=34,IMPROVED_BEST,1858.883814,1858.883814,1859.413837,1858.883814,0.530024,33.437,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=56160;removed=34,IMPROVED_BEST,1858.773440,1858.773440,1858.883814,1858.773440,0.110374,43.816,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=56760;removed=24,IMPROVED_BEST,1858.704779,1858.704779,1858.773440,1858.704779,0.068661,44.251,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=57836;removed=14,IMPROVED_BEST,1857.059070,1857.059070,1858.704779,1857.059070,1.645709,45.035,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=57868;removed=34,IMPROVED_BEST,1856.728787,1856.728787,1857.059070,1856.728787,0.330283,45.067,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=58589;removed=34,IMPROVED_BEST,1856.145209,1856.145209,1856.728787,1856.145209,0.583578,45.580,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,PROGRESS,USEFUL_SO_FAR,INF,INF,1954.015684,1856.145209,97.870474,46.364,iter=59617; feasible=59617; improved=159
+vrp_421_41_1,LNS,PROGRESS,USEFUL_SO_FAR,INF,INF,1954.015684,1856.145209,97.870474,61.364,iter=79948; feasible=79948; improved=159
+vrp_421_41_1,LNS,iter=86603;removed=34,IMPROVED_BEST,1855.822137,1855.822137,1856.145209,1855.822137,0.323072,66.223,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=86630;removed=29,IMPROVED_BEST,1854.405230,1854.405230,1855.822137,1854.405230,1.416907,66.239,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=87666;removed=29,IMPROVED_BEST,1854.405046,1854.405046,1854.405230,1854.405046,0.000184,66.964,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=88498;removed=24,IMPROVED_BEST,1854.360477,1854.360477,1854.405046,1854.360477,0.044568,67.571,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=91999;removed=29,IMPROVED_BEST,1853.943562,1853.943562,1854.360477,1853.943562,0.416916,70.037,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=92350;removed=34,IMPROVED_BEST,1853.819215,1853.819215,1853.943562,1853.819215,0.124347,70.269,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=95610;removed=24,IMPROVED_BEST,1853.787650,1853.787650,1853.819215,1853.787650,0.031566,72.489,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,PROGRESS,USEFUL_SO_FAR,INF,INF,1954.015684,1853.787650,100.228034,76.365,iter=101227; feasible=101227; improved=166
+vrp_421_41_1,LNS,iter=110296;removed=24,IMPROVED_BEST,1853.787542,1853.787542,1853.787650,1853.787542,0.000108,82.595,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=110302;removed=19,IMPROVED_BEST,1852.489266,1852.489266,1853.787542,1852.489266,1.298276,82.602,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=110374;removed=29,IMPROVED_BEST,1852.429493,1852.429493,1852.489266,1852.429493,0.059772,82.654,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=110862;removed=19,IMPROVED_BEST,1851.894303,1851.894303,1852.429493,1851.894303,0.535191,83.007,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=110870;removed=24,IMPROVED_BEST,1851.894287,1851.894287,1851.894303,1851.894287,0.000016,83.015,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=112580;removed=34,IMPROVED_BEST,1850.855789,1850.855789,1851.894287,1850.855789,1.038498,84.265,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=112607;removed=29,IMPROVED_BEST,1850.790838,1850.790838,1850.855789,1850.790838,0.064950,84.288,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=112650;removed=34,IMPROVED_BEST,1849.181087,1849.181087,1850.790838,1849.181087,1.609752,84.320,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=113286;removed=29,IMPROVED_BEST,1848.912660,1848.912660,1849.181087,1848.912660,0.268426,84.755,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,iter=113315;removed=34,IMPROVED_BEST,1848.912574,1848.912574,1848.912660,1848.912574,0.000086,84.775,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,PROGRESS,USEFUL_SO_FAR,INF,INF,1954.015684,1848.912574,105.103109,91.367,iter=122955; feasible=122955; improved=176
+vrp_421_41_1,LNS,iter=126348;removed=29,IMPROVED_BEST,1848.719641,1848.719641,1848.912574,1848.719641,0.192934,93.663,LNS destroy-repair improved incumbent
+vrp_421_41_1,LNS,PROGRESS,USEFUL_SO_FAR,INF,INF,1954.015684,1848.719641,105.296043,106.368,iter=145666; feasible=145666; improved=177
+vrp_421_41_1,LNS,PROGRESS,USEFUL_SO_FAR,INF,INF,1954.015684,1848.719641,105.296043,121.369,iter=168606; feasible=168606; improved=177
+vrp_421_41_1,LNS,PROGRESS,USEFUL_SO_FAR,INF,INF,1954.015684,1848.719641,105.296043,136.370,iter=191531; feasible=191531; improved=177
+vrp_421_41_1,LNS,PHASE_SUMMARY,USEFUL,INF,INF,1954.015684,1848.719641,105.296043,140.588,candidates=200001; feasible=200001; improved=177
+vrp_51_5_1,savings,noise=0,IMPROVED_BEST,588.817788,576.641001,INF,576.641001,INF,0.000,local_gain=12.176788
+vrp_51_5_1,savings,PHASE_SUMMARY,USEFUL,INF,INF,INF,576.641001,INF,0.000,candidates=1; feasible=1; improved=1
+vrp_51_5_1,sweep-grid,try=0;dir=forward;offset=0.000,IMPROVED_BEST,638.283588,573.756357,576.641001,573.756357,2.884644,0.000,local_gain=64.527232
+vrp_51_5_1,sweep-grid,try=0;dir=reverse;offset=0.000,IMPROVED_BEST,694.591459,552.827518,573.756357,552.827518,20.928839,0.000,local_gain=141.763941
+vrp_51_5_1,sweep-grid,try=1;dir=forward;offset=0.157,OK_NO_BEST,615.572317,564.120313,552.827518,552.827518,0.000000,0.000,local_gain=51.452004
+vrp_51_5_1,sweep-grid,try=1;dir=reverse;offset=0.157,OK_NO_BEST,607.611678,557.993617,552.827518,552.827518,0.000000,0.000,local_gain=49.618061
+vrp_51_5_1,sweep-grid,try=2;dir=forward;offset=0.314,OK_NO_BEST,593.464383,564.120313,552.827518,552.827518,0.000000,0.000,local_gain=29.344070
+vrp_51_5_1,sweep-grid,try=2;dir=reverse;offset=0.314,INFEASIBLE,INF,INF,552.827518,552.827518,0.000000,0.000,construction did not produce feasible solution
+vrp_51_5_1,sweep-grid,try=3;dir=forward;offset=0.471,IMPROVED_BEST,613.698670,531.919659,552.827518,531.919659,20.907859,0.001,local_gain=81.779011
+vrp_51_5_1,sweep-grid,try=3;dir=reverse;offset=0.471,IMPROVED_BEST,576.275088,528.323202,531.919659,528.323202,3.596457,0.001,local_gain=47.951886
+vrp_51_5_1,sweep-grid,try=4;dir=forward;offset=0.628,OK_NO_BEST,665.170686,557.326217,528.323202,528.323202,0.000000,0.001,local_gain=107.844470
+vrp_51_5_1,sweep-grid,try=4;dir=reverse;offset=0.628,OK_NO_BEST,636.123378,585.725519,528.323202,528.323202,0.000000,0.001,local_gain=50.397859
+vrp_51_5_1,sweep-grid,try=5;dir=forward;offset=0.785,OK_NO_BEST,642.897003,579.676589,528.323202,528.323202,0.000000,0.001,local_gain=63.220414
+vrp_51_5_1,sweep-grid,try=5;dir=reverse;offset=0.785,OK_NO_BEST,600.406725,589.682821,528.323202,528.323202,0.000000,0.001,local_gain=10.723904
+vrp_51_5_1,sweep-grid,try=6;dir=forward;offset=0.942,OK_NO_BEST,639.847878,573.756357,528.323202,528.323202,0.000000,0.001,local_gain=66.091522
+vrp_51_5_1,sweep-grid,try=6;dir=reverse;offset=0.942,OK_NO_BEST,694.591459,552.827518,528.323202,528.323202,0.000000,0.001,local_gain=141.763941
+vrp_51_5_1,sweep-grid,try=7;dir=forward;offset=1.100,OK_NO_BEST,629.127290,561.500856,528.323202,528.323202,0.000000,0.001,local_gain=67.626434
+vrp_51_5_1,sweep-grid,try=7;dir=reverse;offset=1.100,OK_NO_BEST,604.155368,550.854572,528.323202,528.323202,0.000000,0.001,local_gain=53.300796
+vrp_51_5_1,sweep-grid,try=8;dir=forward;offset=1.257,OK_NO_BEST,684.384653,564.201044,528.323202,528.323202,0.000000,0.001,local_gain=120.183608
+vrp_51_5_1,sweep-grid,try=8;dir=reverse;offset=1.257,OK_NO_BEST,621.673412,565.626407,528.323202,528.323202,0.000000,0.001,local_gain=56.047005
+vrp_51_5_1,sweep-grid,try=9;dir=forward;offset=1.414,OK_NO_BEST,630.778860,564.120313,528.323202,528.323202,0.000000,0.001,local_gain=66.658547
+vrp_51_5_1,sweep-grid,try=9;dir=reverse;offset=1.414,OK_NO_BEST,646.351159,543.510506,528.323202,528.323202,0.000000,0.001,local_gain=102.840653
+vrp_51_5_1,sweep-grid,try=10;dir=forward;offset=1.571,IMPROVED_BEST,586.991656,524.628524,528.323202,524.628524,3.694678,0.001,local_gain=62.363132
+vrp_51_5_1,sweep-grid,try=10;dir=reverse;offset=1.571,OK_NO_BEST,633.223338,528.638915,524.628524,524.628524,0.000000,0.001,local_gain=104.584423
+vrp_51_5_1,sweep-grid,try=11;dir=forward;offset=1.728,OK_NO_BEST,615.826136,552.100173,524.628524,524.628524,0.000000,0.001,local_gain=63.725963
+vrp_51_5_1,sweep-grid,try=11;dir=reverse;offset=1.728,OK_NO_BEST,607.592586,548.963746,524.628524,524.628524,0.000000,0.001,local_gain=58.628840
+vrp_51_5_1,sweep-grid,try=12;dir=forward;offset=1.885,OK_NO_BEST,615.826136,552.100173,524.628524,524.628524,0.000000,0.001,local_gain=63.725963
+vrp_51_5_1,sweep-grid,try=12;dir=reverse;offset=1.885,OK_NO_BEST,607.592586,548.963746,524.628524,524.628524,0.000000,0.002,local_gain=58.628840
+vrp_51_5_1,sweep-grid,try=13;dir=forward;offset=2.042,OK_NO_BEST,630.634101,559.287700,524.628524,524.628524,0.000000,0.002,local_gain=71.346401
+vrp_51_5_1,sweep-grid,try=13;dir=reverse;offset=2.042,INFEASIBLE,INF,INF,524.628524,524.628524,0.000000,0.002,construction did not produce feasible solution
+vrp_51_5_1,sweep-grid,try=14;dir=forward;offset=2.199,OK_NO_BEST,684.804750,557.326217,524.628524,524.628524,0.000000,0.002,local_gain=127.478533
+vrp_51_5_1,sweep-grid,try=14;dir=reverse;offset=2.199,OK_NO_BEST,636.123378,585.725519,524.628524,524.628524,0.000000,0.002,local_gain=50.397859
+vrp_51_5_1,sweep-grid,try=15;dir=forward;offset=2.356,OK_NO_BEST,642.897003,579.676589,524.628524,524.628524,0.000000,0.002,local_gain=63.220414
+vrp_51_5_1,sweep-grid,try=15;dir=reverse;offset=2.356,OK_NO_BEST,641.882741,609.672568,524.628524,524.628524,0.000000,0.002,local_gain=32.210173
+vrp_51_5_1,sweep-grid,try=16;dir=forward;offset=2.513,OK_NO_BEST,602.825032,561.811844,524.628524,524.628524,0.000000,0.002,local_gain=41.013187
+vrp_51_5_1,sweep-grid,try=16;dir=reverse;offset=2.513,OK_NO_BEST,674.134786,550.854572,524.628524,524.628524,0.000000,0.002,local_gain=123.280214
+vrp_51_5_1,sweep-grid,try=17;dir=forward;offset=2.670,OK_NO_BEST,629.373603,599.600700,524.628524,524.628524,0.000000,0.002,local_gain=29.772903
+vrp_51_5_1,sweep-grid,try=17;dir=reverse;offset=2.670,OK_NO_BEST,597.479202,551.248212,524.628524,524.628524,0.000000,0.002,local_gain=46.230990
+vrp_51_5_1,sweep-grid,try=18;dir=forward;offset=2.827,OK_NO_BEST,629.373603,599.600700,524.628524,524.628524,0.000000,0.002,local_gain=29.772903
+vrp_51_5_1,sweep-grid,try=18;dir=reverse;offset=2.827,OK_NO_BEST,597.479202,551.248212,524.628524,524.628524,0.000000,0.002,local_gain=46.230990
+vrp_51_5_1,sweep-grid,try=19;dir=forward;offset=2.985,OK_NO_BEST,629.373603,599.600700,524.628524,524.628524,0.000000,0.002,local_gain=29.772903
+vrp_51_5_1,sweep-grid,try=19;dir=reverse;offset=2.985,OK_NO_BEST,597.479202,551.248212,524.628524,524.628524,0.000000,0.002,local_gain=46.230990
+vrp_51_5_1,sweep-grid,try=20;dir=forward;offset=3.142,OK_NO_BEST,634.021726,564.120313,524.628524,524.628524,0.000000,0.002,local_gain=69.901413
+vrp_51_5_1,sweep-grid,try=20;dir=reverse;offset=3.142,OK_NO_BEST,646.351159,543.510506,524.628524,524.628524,0.000000,0.002,local_gain=102.840653
+vrp_51_5_1,sweep-grid,try=21;dir=forward;offset=3.299,OK_NO_BEST,591.270562,531.919659,524.628524,524.628524,0.000000,0.002,local_gain=59.350903
+vrp_51_5_1,sweep-grid,try=21;dir=reverse;offset=3.299,OK_NO_BEST,633.223338,528.638915,524.628524,524.628524,0.000000,0.002,local_gain=104.584423
+vrp_51_5_1,sweep-grid,try=22;dir=forward;offset=3.456,OK_NO_BEST,591.270562,531.919659,524.628524,524.628524,0.000000,0.002,local_gain=59.350903
+vrp_51_5_1,sweep-grid,try=22;dir=reverse;offset=3.456,OK_NO_BEST,633.223338,528.638915,524.628524,524.628524,0.000000,0.002,local_gain=104.584423
+vrp_51_5_1,sweep-grid,try=23;dir=forward;offset=3.613,OK_NO_BEST,591.270562,531.919659,524.628524,524.628524,0.000000,0.003,local_gain=59.350903
+vrp_51_5_1,sweep-grid,try=23;dir=reverse;offset=3.613,OK_NO_BEST,633.223338,528.638915,524.628524,524.628524,0.000000,0.003,local_gain=104.584423
+vrp_51_5_1,sweep-grid,try=24;dir=forward;offset=3.770,OK_NO_BEST,648.229938,558.559351,524.628524,524.628524,0.000000,0.003,local_gain=89.670586
+vrp_51_5_1,sweep-grid,try=24;dir=reverse;offset=3.770,OK_NO_BEST,660.582813,579.999668,524.628524,524.628524,0.000000,0.003,local_gain=80.583145
+vrp_51_5_1,sweep-grid,try=25;dir=forward;offset=3.927,OK_NO_BEST,648.229938,558.559351,524.628524,524.628524,0.000000,0.003,local_gain=89.670586
+vrp_51_5_1,sweep-grid,try=25;dir=reverse;offset=3.927,OK_NO_BEST,660.582813,579.999668,524.628524,524.628524,0.000000,0.003,local_gain=80.583145
+vrp_51_5_1,sweep-grid,try=26;dir=forward;offset=4.084,OK_NO_BEST,585.373268,561.811844,524.628524,524.628524,0.000000,0.003,local_gain=23.561424
+vrp_51_5_1,sweep-grid,try=26;dir=reverse;offset=4.084,OK_NO_BEST,623.322941,555.967614,524.628524,524.628524,0.000000,0.003,local_gain=67.355326
+vrp_51_5_1,sweep-grid,try=27;dir=forward;offset=4.241,INFEASIBLE,INF,INF,524.628524,524.628524,0.000000,0.003,construction did not produce feasible solution
+vrp_51_5_1,sweep-grid,try=27;dir=reverse;offset=4.241,OK_NO_BEST,602.747504,568.938036,524.628524,524.628524,0.000000,0.003,local_gain=33.809468
+vrp_51_5_1,sweep-grid,try=28;dir=forward;offset=4.398,INFEASIBLE,INF,INF,524.628524,524.628524,0.000000,0.003,construction did not produce feasible solution
+vrp_51_5_1,sweep-grid,try=28;dir=reverse;offset=4.398,OK_NO_BEST,602.747504,568.938036,524.628524,524.628524,0.000000,0.003,local_gain=33.809468
+vrp_51_5_1,sweep-grid,try=29;dir=forward;offset=4.555,OK_NO_BEST,591.270562,531.919659,524.628524,524.628524,0.000000,0.003,local_gain=59.350903
+vrp_51_5_1,sweep-grid,try=29;dir=reverse;offset=4.555,OK_NO_BEST,577.711452,528.323202,524.628524,524.628524,0.000000,0.003,local_gain=49.388251
+vrp_51_5_1,sweep-grid,try=30;dir=forward;offset=4.712,OK_NO_BEST,591.270562,531.919659,524.628524,524.628524,0.000000,0.003,local_gain=59.350903
+vrp_51_5_1,sweep-grid,try=30;dir=reverse;offset=4.712,OK_NO_BEST,577.711452,528.323202,524.628524,524.628524,0.000000,0.003,local_gain=49.388251
+vrp_51_5_1,sweep-grid,try=31;dir=forward;offset=4.869,INFEASIBLE,INF,INF,524.628524,524.628524,0.000000,0.003,construction did not produce feasible solution
+vrp_51_5_1,sweep-grid,try=31;dir=reverse;offset=4.869,OK_NO_BEST,647.592695,588.165498,524.628524,524.628524,0.000000,0.003,local_gain=59.427198
+vrp_51_5_1,sweep-grid,try=32;dir=forward;offset=5.027,OK_NO_BEST,642.897003,579.676589,524.628524,524.628524,0.000000,0.003,local_gain=63.220414
+vrp_51_5_1,sweep-grid,try=32;dir=reverse;offset=5.027,OK_NO_BEST,646.629446,578.717296,524.628524,524.628524,0.000000,0.003,local_gain=67.912149
+vrp_51_5_1,sweep-grid,try=33;dir=forward;offset=5.184,OK_NO_BEST,642.897003,579.676589,524.628524,524.628524,0.000000,0.003,local_gain=63.220414
+vrp_51_5_1,sweep-grid,try=33;dir=reverse;offset=5.184,OK_NO_BEST,646.629446,578.717296,524.628524,524.628524,0.000000,0.003,local_gain=67.912149
+vrp_51_5_1,sweep-grid,try=34;dir=forward;offset=5.341,OK_NO_BEST,584.785147,561.811844,524.628524,524.628524,0.000000,0.004,local_gain=22.973303
+vrp_51_5_1,sweep-grid,try=34;dir=reverse;offset=5.341,OK_NO_BEST,622.749244,550.854572,524.628524,524.628524,0.000000,0.004,local_gain=71.894672
+vrp_51_5_1,sweep-grid,try=35;dir=forward;offset=5.498,OK_NO_BEST,584.785147,561.811844,524.628524,524.628524,0.000000,0.004,local_gain=22.973303
+vrp_51_5_1,sweep-grid,try=35;dir=reverse;offset=5.498,OK_NO_BEST,622.749244,550.854572,524.628524,524.628524,0.000000,0.004,local_gain=71.894672
+vrp_51_5_1,sweep-grid,try=36;dir=forward;offset=5.655,OK_NO_BEST,594.175193,567.453995,524.628524,524.628524,0.000000,0.004,local_gain=26.721198
+vrp_51_5_1,sweep-grid,try=36;dir=reverse;offset=5.655,OK_NO_BEST,598.107425,528.638915,524.628524,524.628524,0.000000,0.004,local_gain=69.468510
+vrp_51_5_1,sweep-grid,try=37;dir=forward;offset=5.812,OK_NO_BEST,604.904509,545.212705,524.628524,524.628524,0.000000,0.004,local_gain=59.691804
+vrp_51_5_1,sweep-grid,try=37;dir=reverse;offset=5.812,OK_NO_BEST,583.599245,528.638915,524.628524,524.628524,0.000000,0.004,local_gain=54.960330
+vrp_51_5_1,sweep-grid,try=38;dir=forward;offset=5.969,OK_NO_BEST,630.528463,559.287700,524.628524,524.628524,0.000000,0.004,local_gain=71.240763
+vrp_51_5_1,sweep-grid,try=38;dir=reverse;offset=5.969,OK_NO_BEST,636.123378,585.725519,524.628524,524.628524,0.000000,0.004,local_gain=50.397859
+vrp_51_5_1,sweep-grid,try=39;dir=forward;offset=6.126,OK_NO_BEST,642.897003,579.676589,524.628524,524.628524,0.000000,0.004,local_gain=63.220414
+vrp_51_5_1,sweep-grid,try=39;dir=reverse;offset=6.126,OK_NO_BEST,646.629446,578.717296,524.628524,524.628524,0.000000,0.004,local_gain=67.912149
+vrp_51_5_1,sweep-grid,PHASE_SUMMARY,USEFUL,INF,INF,576.641001,524.628524,52.012476,0.004,candidates=80; feasible=75; improved=5
+vrp_51_5_1,LNS,iter=3;removed=7,IMPROVED_BEST,524.611147,524.611147,524.628524,524.611147,0.017378,0.004,LNS destroy-repair improved incumbent
+vrp_51_5_1,LNS,PHASE_SUMMARY,USEFUL,INF,INF,524.628524,524.611147,0.017378,2.032,candidates=200001; feasible=200001; improved=1

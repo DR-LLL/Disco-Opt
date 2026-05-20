@@ -2,15 +2,18 @@
 #include <chrono>
 #include <cmath>
 #include <cstdlib>
+#include <filesystem>
 #include <fstream>
 #include <iomanip>
 #include <iostream>
 #include <numeric>
 #include <random>
+#include <sstream>
 #include <string>
 #include <vector>
 
 using namespace std;
+namespace fs = std::filesystem;
 
 struct Customer {
     int demand;
@@ -808,56 +811,257 @@ Solution lns_step(const Solution& base, int remove_count) {
     return sol;
 }
 
-void print_solution(const Solution& sol) {
-    cout.setf(ios::fixed);
-    cout << setprecision(6) << sol.cost << " 0\n";
+
+void write_solution(ostream& out, const Solution& sol) {
+    out.setf(ios::fixed);
+    out << setprecision(6) << sol.cost << " 0\n";
 
     for (int rr = 0; rr < V; ++rr) {
-        cout << 0;
+        out << 0;
 
         for (int x : sol.r[rr]) {
-            cout << ' ' << x;
+            out << ' ' << x;
         }
 
-        cout << ' ' << 0 << "\n";
+        out << ' ' << 0 << "\n";
     }
 }
 
-int main(int argc, char** argv) {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
+string fmt_double(double x, int prec = 6) {
+    if (x >= 1e90) {
+        return "INF";
+    }
 
-    istream* in = &cin;
-    ifstream fin;
+    ostringstream ss;
+    ss.setf(ios::fixed);
+    ss << setprecision(prec) << x;
+    return ss.str();
+}
 
-    if (argc >= 2) {
-        string name = argv[1];
+string csv_escape(const string& s) {
+    bool need_quotes = false;
 
-        if (name != "-" && name.rfind("--", 0) != 0) {
-            fin.open(name);
-
-            if (fin) {
-                in = &fin;
-            }
+    for (char c : s) {
+        if (c == ',' || c == '"' || c == '\n' || c == '\r') {
+            need_quotes = true;
+            break;
         }
     }
 
-    if (argc >= 3) {
-        TIME_LIMIT = atof(argv[2]);
+    if (!need_quotes) {
+        return s;
     }
 
-    if (!(*in >> N >> V >> CAP)) {
-        return 0;
+    string res = "\"";
+    for (char c : s) {
+        if (c == '"') {
+            res += "\"\"";
+        } else {
+            res += c;
+        }
+    }
+    res += "\"";
+    return res;
+}
+
+ofstream* PHASE_CSV = nullptr;
+string CURRENT_FILE_NAME = "single";
+
+void write_phase_csv_header(ofstream& out) {
+    out << "file,phase,candidate,status,constructed_cost,after_local_cost,"
+        << "best_before,best_after,improvement,time_seconds,note\n";
+}
+
+void log_phase_csv(
+    const string& phase,
+    const string& candidate,
+    const string& status,
+    double constructed_cost,
+    double after_local_cost,
+    double best_before,
+    double best_after,
+    double improvement,
+    double time_seconds,
+    const string& note
+) {
+    if (PHASE_CSV == nullptr) {
+        return;
     }
 
-    a.resize(N);
+    (*PHASE_CSV) << csv_escape(CURRENT_FILE_NAME) << ','
+                 << csv_escape(phase) << ','
+                 << csv_escape(candidate) << ','
+                 << csv_escape(status) << ','
+                 << fmt_double(constructed_cost) << ','
+                 << fmt_double(after_local_cost) << ','
+                 << fmt_double(best_before) << ','
+                 << fmt_double(best_after) << ','
+                 << fmt_double(improvement) << ','
+                 << fmt_double(time_seconds, 3) << ','
+                 << csv_escape(note) << "\n";
+
+    PHASE_CSV->flush();
+}
+
+struct PhaseStats {
+    string name;
+    int candidates = 0;
+    int feasible = 0;
+    int improved = 0;
+    double best_before = 1e100;
+    double best_after = 1e100;
+    double start_time_sec = 0.0;
+    double end_time_sec = 0.0;
+};
+
+void begin_phase(PhaseStats& st, const string& name, double current_best, bool verbose) {
+    st = PhaseStats();
+    st.name = name;
+    st.best_before = current_best;
+    st.best_after = current_best;
+    st.start_time_sec = elapsed();
+
+    if (verbose) {
+        cerr << "\n[phase-begin] " << name
+             << " best_before=" << fmt_double(current_best)
+             << " time=" << fmt_double(elapsed(), 3) << "s\n";
+    }
+}
+
+void end_phase(PhaseStats& st, double current_best, bool verbose) {
+    st.best_after = current_best;
+    st.end_time_sec = elapsed();
+
+    double gain = st.best_before - st.best_after;
+    bool useful = gain > 1e-7;
+
+    if (verbose) {
+        cerr << "[phase-end] " << st.name
+             << " candidates=" << st.candidates
+             << " feasible=" << st.feasible
+             << " improved=" << st.improved
+             << " best_before=" << fmt_double(st.best_before)
+             << " best_after=" << fmt_double(st.best_after)
+             << " gain=" << fmt_double(max(0.0, gain))
+             << " useful=" << (useful ? "YES" : "NO")
+             << " phase_time=" << fmt_double(st.end_time_sec - st.start_time_sec, 3) << "s\n";
+    }
+
+    log_phase_csv(
+        st.name,
+        "PHASE_SUMMARY",
+        useful ? "USEFUL" : "NOT_USEFUL",
+        1e100,
+        1e100,
+        st.best_before,
+        st.best_after,
+        max(0.0, gain),
+        st.end_time_sec - st.start_time_sec,
+        "candidates=" + to_string(st.candidates) +
+        "; feasible=" + to_string(st.feasible) +
+        "; improved=" + to_string(st.improved)
+    );
+}
+
+bool read_instance_from_file(const fs::path& filename) {
+    ifstream in(filename);
+
+    if (!in) {
+        return false;
+    }
+
+    if (!(in >> N >> V >> CAP)) {
+        return false;
+    }
+
+    a.assign(N, Customer{0, 0.0, 0.0});
 
     for (int i = 0; i < N; ++i) {
-        (*in) >> a[i].demand >> a[i].x >> a[i].y;
+        if (!(in >> a[i].demand >> a[i].x >> a[i].y)) {
+            return false;
+        }
     }
 
     build_dist();
+    return true;
+}
 
+void try_candidate_solution(
+    Solution sol,
+    const string& phase,
+    const string& candidate,
+    Solution& best,
+    PhaseStats& st,
+    bool verbose
+) {
+    ++st.candidates;
+
+    if (!time_left()) {
+        log_phase_csv(phase, candidate, "TIME_LIMIT", 1e100, 1e100, best.cost, best.cost, 0.0, elapsed(), "candidate skipped by time limit");
+        return;
+    }
+
+    double constructed = sol.cost;
+    double best_before = best.cost;
+
+    if (!feasible(sol)) {
+        if (verbose) {
+            cerr << "[candidate] phase=" << phase
+                 << " name=" << candidate
+                 << " status=INFEASIBLE"
+                 << " constructed=" << fmt_double(constructed)
+                 << " best=" << fmt_double(best.cost) << "\n";
+        }
+
+        log_phase_csv(phase, candidate, "INFEASIBLE", constructed, 1e100, best_before, best.cost, 0.0, elapsed(), "construction did not produce feasible solution");
+        return;
+    }
+
+    ++st.feasible;
+
+    double before_local = sol.cost;
+    local_search(sol);
+    double after_local = sol.cost;
+    double local_gain = before_local - after_local;
+
+    bool improved = false;
+    if (feasible(sol) && sol.cost + 1e-7 < best.cost) {
+        best = sol;
+        ++st.improved;
+        improved = true;
+    }
+
+    double global_gain = best_before - best.cost;
+
+    if (verbose) {
+        cerr << "[candidate] phase=" << phase
+             << " name=" << candidate
+             << " status=OK"
+             << " constructed=" << fmt_double(constructed)
+             << " after_local=" << fmt_double(after_local)
+             << " local_gain=" << fmt_double(max(0.0, local_gain))
+             << " best_before=" << fmt_double(best_before)
+             << " best_after=" << fmt_double(best.cost)
+             << " useful=" << (improved ? "YES" : "NO")
+             << " time=" << fmt_double(elapsed(), 3) << "s\n";
+    }
+
+    log_phase_csv(
+        phase,
+        candidate,
+        improved ? "IMPROVED_BEST" : "OK_NO_BEST",
+        constructed,
+        after_local,
+        best_before,
+        best.cost,
+        max(0.0, global_gain),
+        elapsed(),
+        "local_gain=" + fmt_double(max(0.0, local_gain))
+    );
+}
+
+Solution solve_instance(bool verbose) {
+    rng.seed(1234567);
     start_time = chrono::steady_clock::now();
 
     Solution best;
@@ -865,101 +1069,414 @@ int main(int argc, char** argv) {
     recompute(best);
     best.cost = 1e100;
 
-    auto try_sol = [&](Solution sol, const string& tag) {
-        if (!time_left()) {
-            return;
-        }
-
-        if (!feasible(sol)) {
-            return;
-        }
-
-        local_search(sol);
-
-        if (feasible(sol) && sol.cost + 1e-7 < best.cost) {
-            best = sol;
-
-            cerr.setf(ios::fixed);
-            cerr << setprecision(3)
-                 << "new best " << best.cost
-                 << " from " << tag
-                 << " at " << elapsed() << "s\n";
-        }
-    };
-
-    try_sol(make_savings_solution(0.0), "savings");
-
-    for (int t = 0; t < 12 && time_left(); ++t) {
-        double noise = (t + 1) * 0.02;
-        try_sol(make_savings_solution(noise), "randomized-savings");
+    if (verbose) {
+        cerr << "[solve] start instance=" << CURRENT_FILE_NAME
+             << " n=" << N
+             << " v=" << V
+             << " capacity=" << CAP
+             << " time_limit=" << TIME_LIMIT << "s\n";
+        cerr << "[mode] simplified without fallback-regret: savings + sweep-grid + local_search + LNS\n";
     }
+
+    PhaseStats st;
+
+    begin_phase(st, "savings", best.cost, verbose);
+    try_candidate_solution(make_savings_solution(0.0), "savings", "noise=0", best, st, verbose);
+    end_phase(st, best.cost, verbose);
 
     const double PI = acos(-1.0);
 
+    begin_phase(st, "sweep-grid", best.cost, verbose);
     for (int t = 0; t < 40 && time_left(); ++t) {
         double offset = 2.0 * PI * (double)t / 40.0;
 
-        try_sol(make_sweep_solution(offset, false, 0.0), "sweep");
+        try_candidate_solution(
+            make_sweep_solution(offset, false, 0.0),
+            "sweep-grid",
+            "try=" + to_string(t) + ";dir=forward;offset=" + fmt_double(offset, 3),
+            best,
+            st,
+            verbose
+        );
 
         if (time_left()) {
-            try_sol(make_sweep_solution(offset, true, 0.0), "reverse-sweep");
+            try_candidate_solution(
+                make_sweep_solution(offset, true, 0.0),
+                "sweep-grid",
+                "try=" + to_string(t) + ";dir=reverse;offset=" + fmt_double(offset, 3),
+                best,
+                st,
+                verbose
+            );
         }
     }
+    end_phase(st, best.cost, verbose);
 
-    uniform_int_distribution<int> bit(0, 1);
-    uniform_real_distribution<double> U(0.0, 2.0 * acos(-1.0));
-
-    for (int t = 0; t < 200 && time_left(); ++t) {
-        try_sol(make_sweep_solution(U(rng), bit(rng), 0.05), "noisy-sweep");
-    }
-
-    if (best.cost >= 1e90) {
-        vector<vector<int>> routes(V);
-        vector<int> nodes;
-
-        for (int i = 1; i < N; ++i) {
-            nodes.push_back(i);
+    if (!feasible(best)) {
+        if (verbose) {
+            cerr << "[LNS] skipped: savings and sweep-grid did not produce a feasible solution, "
+                 << "and fallback-regret is disabled\n";
         }
 
-        sort(nodes.begin(), nodes.end(), [&](int x, int y) {
-            return a[x].demand > a[y].demand;
-        });
+        log_phase_csv(
+            "LNS",
+            "SKIPPED",
+            "NO_INITIAL_FEASIBLE",
+            1e100,
+            1e100,
+            best.cost,
+            best.cost,
+            0.0,
+            elapsed(),
+            "fallback-regret disabled; no feasible initial solution for LNS"
+        );
 
-        regret_insert_all(routes, nodes, V, false);
+        if (verbose) {
+            cerr << "[solve-finish] instance=" << CURRENT_FILE_NAME
+                 << " best=INF feasible=NO"
+                 << " total_time=" << fmt_double(elapsed(), 3) << "s\n";
+        }
 
-        best.r = routes;
-        recompute(best);
+        return best;
     }
+
+    begin_phase(st, "LNS", best.cost, verbose);
 
     int iter = 0;
+    int lns_feasible = 0;
+    int lns_improved = 0;
+    double last_log = elapsed();
 
     while (time_left()) {
         int customers = max(1, N - 1);
 
-        int rem = 4 + (iter % 7) * max(1, customers / 80);
-        rem = min(rem, max(3, customers / 5));
+        int rem;
+        if (customers <= 30) {
+            // После удаления noisy-sweep маленькие тесты компенсируем более сильным LNS:
+            // перебираем разрушения от 3 клиентов почти до всего маршрута.
+            int max_rem = max(3, customers - 1);
+            rem = 3 + (iter % max(1, max_rem - 2));
+            rem = min(rem, max_rem);
+        } else {
+            rem = 4 + (iter % 7) * max(1, customers / 80);
+            rem = min(rem, max(3, customers / 5));
+        }
 
+        double best_before = best.cost;
         Solution cand = lns_step(best, rem);
 
-        if (feasible(cand) && cand.cost + 1e-7 < best.cost) {
-            best = cand;
+        ++st.candidates;
 
-            cerr.setf(ios::fixed);
-            cerr << setprecision(3)
-                 << "new best " << best.cost
-                 << " from lns"
-                 << " at " << elapsed() << "s\n";
+        if (feasible(cand)) {
+            ++st.feasible;
+            ++lns_feasible;
+
+            if (cand.cost + 1e-7 < best.cost) {
+                best = cand;
+                ++st.improved;
+                ++lns_improved;
+
+                if (verbose) {
+                    cerr.setf(ios::fixed);
+                    cerr << setprecision(3)
+                         << "[lns-improve] iter=" << iter
+                         << " removed=" << rem
+                         << " best_before=" << best_before
+                         << " best_after=" << best.cost
+                         << " gain=" << (best_before - best.cost)
+                         << " time=" << elapsed() << "s\n";
+                }
+
+                log_phase_csv(
+                    "LNS",
+                    "iter=" + to_string(iter) + ";removed=" + to_string(rem),
+                    "IMPROVED_BEST",
+                    cand.cost,
+                    cand.cost,
+                    best_before,
+                    best.cost,
+                    max(0.0, best_before - best.cost),
+                    elapsed(),
+                    "LNS destroy-repair improved incumbent"
+                );
+            }
+        } else {
+            log_phase_csv(
+                "LNS",
+                "iter=" + to_string(iter) + ";removed=" + to_string(rem),
+                "INFEASIBLE",
+                cand.cost,
+                cand.cost,
+                best_before,
+                best.cost,
+                0.0,
+                elapsed(),
+                "LNS repair returned infeasible solution"
+            );
         }
 
         ++iter;
 
-        if (iter > 200000) {
+        if (verbose && elapsed() - last_log >= 15.0) {
+            cerr.setf(ios::fixed);
+            cerr << setprecision(3)
+                 << "[lns-progress] time=" << elapsed()
+                 << "s iter=" << iter
+                 << " feasible=" << lns_feasible
+                 << " improved=" << lns_improved
+                 << " current_best=" << best.cost
+                 << " useful_so_far=" << (lns_improved > 0 ? "YES" : "NO") << "\n";
+
+            log_phase_csv(
+                "LNS",
+                "PROGRESS",
+                lns_improved > 0 ? "USEFUL_SO_FAR" : "NO_IMPROVEMENT_YET",
+                1e100,
+                1e100,
+                st.best_before,
+                best.cost,
+                max(0.0, st.best_before - best.cost),
+                elapsed(),
+                "iter=" + to_string(iter) + "; feasible=" + to_string(lns_feasible) + "; improved=" + to_string(lns_improved)
+            );
+
+            last_log = elapsed();
+        }
+
+        long long iter_limit = (N <= 30 ? 5000000LL : 200000LL);
+        if (iter > iter_limit) {
             break;
         }
     }
 
-    recompute(best);
-    print_solution(best);
+    end_phase(st, best.cost, verbose);
 
+    recompute(best);
+
+    if (verbose) {
+        cerr.setf(ios::fixed);
+        cerr << setprecision(3)
+             << "[solve-finish] instance=" << CURRENT_FILE_NAME
+             << " best=" << best.cost
+             << " feasible=" << (feasible(best) ? "YES" : "NO")
+             << " total_time=" << elapsed() << "s\n";
+    }
+
+    return best;
+}
+
+fs::path executable_dir(char** argv) {
+    fs::path exe = argv[0];
+
+    if (exe.has_parent_path()) {
+        fs::path parent = exe.parent_path();
+
+        if (parent.is_relative()) {
+            return fs::absolute(parent).lexically_normal();
+        }
+
+        return parent.lexically_normal();
+    }
+
+    return fs::current_path();
+}
+
+bool is_input_file(const fs::path& p) {
+    if (!fs::is_regular_file(p)) {
+        return false;
+    }
+
+    string name = p.filename().string();
+
+    if (name.empty()) {
+        return false;
+    }
+
+    if (name[0] == '.') {
+        return false;
+    }
+
+    if (name == "results.csv" || name == "phase_log.csv" || name == "checked_results.csv") {
+        return false;
+    }
+
+    if (p.extension() == ".out" || p.extension() == ".csv") {
+        return false;
+    }
+
+    return true;
+}
+
+vector<fs::path> collect_data_files(const fs::path& data_dir) {
+    vector<fs::path> files;
+
+    for (const auto& entry : fs::directory_iterator(data_dir)) {
+        fs::path p = entry.path();
+
+        if (is_input_file(p)) {
+            files.push_back(p);
+        }
+    }
+
+    sort(files.begin(), files.end());
+    return files;
+}
+
+int main(int argc, char** argv) {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    if (argc >= 2) {
+        TIME_LIMIT = atof(argv[1]);
+    }
+
+    fs::path root = executable_dir(argv);
+    fs::path data_dir = root / "Data";
+    fs::path csv_path = data_dir / "results.csv";
+    fs::path phase_csv_path = data_dir / "phase_log.csv";
+
+    cerr << "[config] executable dir: " << root.string() << "\n";
+    cerr << "[config] data dir: " << data_dir.string() << "\n";
+    cerr << "[config] time limit per file: " << TIME_LIMIT << "s\n";
+
+    if (!fs::exists(data_dir) || !fs::is_directory(data_dir)) {
+        cerr << "[error] Data folder not found: " << data_dir.string() << "\n";
+        return 1;
+    }
+
+    vector<fs::path> files = collect_data_files(data_dir);
+
+    if (files.empty()) {
+        cerr << "[error] no input files found in Data folder\n";
+        return 1;
+    }
+
+    ofstream csv(csv_path);
+
+    if (!csv) {
+        cerr << "[error] cannot create csv: " << csv_path.string() << "\n";
+        return 1;
+    }
+
+    ofstream phase_csv(phase_csv_path);
+
+    if (!phase_csv) {
+        cerr << "[error] cannot create phase csv: " << phase_csv_path.string() << "\n";
+        return 1;
+    }
+
+    PHASE_CSV = &phase_csv;
+    write_phase_csv_header(phase_csv);
+
+    csv << "file,n,v,capacity,cost,time_seconds,solution_file,status\n";
+
+    cerr << "[batch] files found: " << files.size() << "\n";
+    cerr << "[batch] results csv: " << csv_path.string() << "\n";
+    cerr << "[batch] phase log csv: " << phase_csv_path.string() << "\n";
+
+    for (int idx = 0; idx < (int)files.size(); ++idx) {
+        const fs::path& input_path = files[idx];
+        string file_name = input_path.filename().string();
+        CURRENT_FILE_NAME = file_name;
+
+        cerr << "\n============================================================\n";
+        cerr << "[batch] (" << (idx + 1) << "/" << files.size()
+             << ") file=" << file_name << "\n";
+
+        if (!read_instance_from_file(input_path)) {
+            cerr << "[error] cannot read as VRP instance: "
+                 << input_path.string() << "\n";
+            csv << file_name << ",,,,,,,READ_ERROR\n";
+            csv.flush();
+            continue;
+        }
+
+        int total_demand = 0;
+        int max_demand = 0;
+        for (int i = 1; i < N; ++i) {
+            total_demand += a[i].demand;
+            max_demand = max(max_demand, a[i].demand);
+        }
+
+        cerr << "[instance] n=" << N
+             << " v=" << V
+             << " capacity=" << CAP
+             << " total_demand=" << total_demand
+             << " total_capacity=" << (long long)V * CAP
+             << " max_demand=" << max_demand << "\n";
+
+        if (total_demand > (long long)V * CAP || max_demand > CAP) {
+            cerr << "[warning] necessary feasibility condition failed: "
+                 << "total_demand <= V*capacity and max_demand <= capacity\n";
+        }
+
+        auto wall_start = chrono::steady_clock::now();
+        Solution sol = solve_instance(true);
+        auto wall_finish = chrono::steady_clock::now();
+
+        double seconds = chrono::duration<double>(wall_finish - wall_start).count();
+
+        if (!feasible(sol)) {
+            cerr << "[done] file=" << file_name
+                 << " status=NO_FEASIBLE"
+                 << " time=" << fmt_double(seconds, 3) << "s\n";
+
+            csv << file_name << ','
+                << N << ','
+                << V << ','
+                << CAP << ','
+                << "INF" << ','
+                << fixed << setprecision(3) << seconds << ','
+                << "" << ",NO_FEASIBLE\n";
+
+            csv.flush();
+            continue;
+        }
+
+        fs::path out_path = input_path;
+        out_path += ".out";
+
+        ofstream out(out_path);
+
+        if (!out) {
+            cerr << "[error] cannot write solution file: "
+                 << out_path.string() << "\n";
+
+            csv << file_name << ','
+                << N << ','
+                << V << ','
+                << CAP << ','
+                << fixed << setprecision(6) << sol.cost << ','
+                << setprecision(3) << seconds << ','
+                << out_path.filename().string() << ",WRITE_ERROR\n";
+
+            csv.flush();
+            continue;
+        }
+
+        write_solution(out, sol);
+        out.close();
+
+        csv << file_name << ','
+            << N << ','
+            << V << ','
+            << CAP << ','
+            << fixed << setprecision(6) << sol.cost << ','
+            << setprecision(3) << seconds << ','
+            << out_path.filename().string() << ",OK\n";
+
+        csv.flush();
+
+        cerr << fixed << setprecision(6)
+             << "[done] file=" << file_name
+             << " cost=" << sol.cost;
+
+        cerr << setprecision(3)
+             << " time=" << seconds << "s"
+             << " solution=" << out_path.string() << "\n";
+    }
+
+    cerr << "\n[finish] results saved to " << csv_path.string() << "\n";
+    cerr << "[finish] phase logs saved to " << phase_csv_path.string() << "\n";
     return 0;
 }
