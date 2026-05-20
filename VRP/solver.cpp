@@ -1075,7 +1075,6 @@ Solution solve_instance(bool verbose) {
              << " v=" << V
              << " capacity=" << CAP
              << " time_limit=" << TIME_LIMIT << "s\n";
-        cerr << "[mode] simplified without fallback-regret: savings + sweep-grid + local_search + LNS\n";
     }
 
     PhaseStats st;
@@ -1112,32 +1111,31 @@ Solution solve_instance(bool verbose) {
     }
     end_phase(st, best.cost, verbose);
 
-    if (!feasible(best)) {
-        if (verbose) {
-            cerr << "[LNS] skipped: savings and sweep-grid did not produce a feasible solution, "
-                 << "and fallback-regret is disabled\n";
+    if (best.cost >= 1e90) {
+        begin_phase(st, "fallback-regret", best.cost, verbose);
+
+        vector<vector<int>> routes(V);
+        vector<int> nodes;
+
+        for (int i = 1; i < N; ++i) {
+            nodes.push_back(i);
         }
 
-        log_phase_csv(
-            "LNS",
-            "SKIPPED",
-            "NO_INITIAL_FEASIBLE",
-            1e100,
-            1e100,
-            best.cost,
-            best.cost,
-            0.0,
-            elapsed(),
-            "fallback-regret disabled; no feasible initial solution for LNS"
-        );
+        sort(nodes.begin(), nodes.end(), [&](int x, int y) {
+            return a[x].demand > a[y].demand;
+        });
 
-        if (verbose) {
-            cerr << "[solve-finish] instance=" << CURRENT_FILE_NAME
-                 << " best=INF feasible=NO"
-                 << " total_time=" << fmt_double(elapsed(), 3) << "s\n";
+        bool ok = regret_insert_all(routes, nodes, V, false);
+        Solution fallback;
+        fallback.r = routes;
+        recompute(fallback);
+
+        if (!ok) {
+            fallback.cost = 1e100;
         }
 
-        return best;
+        try_candidate_solution(fallback, "fallback-regret", "heavy-first-regret", best, st, verbose);
+        end_phase(st, best.cost, verbose);
     }
 
     begin_phase(st, "LNS", best.cost, verbose);
@@ -1258,7 +1256,6 @@ Solution solve_instance(bool verbose) {
         cerr << setprecision(3)
              << "[solve-finish] instance=" << CURRENT_FILE_NAME
              << " best=" << best.cost
-             << " feasible=" << (feasible(best) ? "YES" : "NO")
              << " total_time=" << elapsed() << "s\n";
     }
 
@@ -1415,23 +1412,6 @@ int main(int argc, char** argv) {
         auto wall_finish = chrono::steady_clock::now();
 
         double seconds = chrono::duration<double>(wall_finish - wall_start).count();
-
-        if (!feasible(sol)) {
-            cerr << "[done] file=" << file_name
-                 << " status=NO_FEASIBLE"
-                 << " time=" << fmt_double(seconds, 3) << "s\n";
-
-            csv << file_name << ','
-                << N << ','
-                << V << ','
-                << CAP << ','
-                << "INF" << ','
-                << fixed << setprecision(3) << seconds << ','
-                << "" << ",NO_FEASIBLE\n";
-
-            csv.flush();
-            continue;
-        }
 
         fs::path out_path = input_path;
         out_path += ".out";
