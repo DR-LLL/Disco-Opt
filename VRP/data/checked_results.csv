@@ -1,7 +1,0 @@
-file,n,v,capacity,cost,time_seconds,solution_file,status,check_status,reported_in_solution,recomputed_cost,csv_cost_abs_error,note
-vrp_101_10_1,101,10,200,820.921301,7.599,vrp_101_10_1.out,OK,OK,820.921301,820.921301,0.000000,
-vrp_16_3_1,16,3,90,278.726300,22.987,vrp_16_3_1.out,OK,OK,278.726300,278.726300,0.000000,
-vrp_200_16_1,200,16,200,INF,0.004,,NO_FEASIBLE,BAD,,,,empty solution_file field in csv
-vrp_26_8_1,26,8,48,607.650946,58.450,vrp_26_8_1.out,OK,OK,607.650946,607.650946,0.000000,
-vrp_421_41_1,421,41,200,1848.719641,141.949,vrp_421_41_1.out,OK,OK,1848.719641,1848.719641,0.000000,
-vrp_51_5_1,51,5,160,524.611147,2.036,vrp_51_5_1.out,OK,OK,524.611147,524.611147,0.000000,
